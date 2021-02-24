@@ -1,0 +1,18 @@
+/*Đây là chú thích trong file CSS*/
+*{
+    margin: 0;
+}
+.phat-thanh{
+    font-size: 24px i !important;/* important không bị thay đổi thuộc tính */
+    color: black;
+    font-family:'Times New Roman', Times, serif; 
+    line-height: 1.5; /*Khoảng cách các dòng*/
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: blueviolet;
+    padding: 10px;
+   font-variant: initial;
+}
+/* .phat-thanh{
+    font-size: 30px;
+} */
