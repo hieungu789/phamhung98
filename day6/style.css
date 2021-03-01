@@ -72,12 +72,24 @@ body {
     animation-iteration-count: infinite;
 }
 @keyframes example {
-    from{
-        transform: scale(0);
-    }
-    to{
-        transform: scale(1);
-    }
+  0% {
+      font-size: 120px;
+  }
+  25%{
+      font-size: 100px;
+  }
+  50%{
+      font-size: 120px;
+  }
+  65%{
+      font-size: 100px;
+  }
+  85%{
+      font-size: 120px;
+  }
+  100%{
+      font-size: 100px;
+  }
 }
 .chu{
     margin-top: 30px;
