@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	background-color: #f2f2f2;
+}
+.wrapper {
+	width: 40%;
+	margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery {
+
+	margin-top: 30px;
+    margin-bottom: 30px;
+    /* background-color: rgb(179, 177, 174); */
+}
+
+.gallery ul {
+    border: none;
+	list-style-type: none;
+	margin-left: 65px;
+}
+
+.gallery ul li {
+	position: relative;
+	float: left;
+	width: 130px;
+	height: 130px;
+	padding: 5px;
+	z-index: 0;
+}
+
+.gallery ul li:hover {
+	z-index: 5;
+}
+.gallery ul li img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid #dddddd;
+	padding: 5px;
+	width: 130px;
+	height: 130px;
+	background: #f0f0f0;
+}
+.gallery ul li img:hover {
+	width: 200px;
+	height: 200px;
+	margin-top: -130px;
+	margin-left: -130px;
+	top: 65%;
+	left: 65%;
+}
+.icon-img{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.caret{
+    font-size: 100px;
+    padding: 30px auto;
+    color: #FE7A74;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.chu{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Roboto,sans-serif;
+    text-transform: uppercase;
+    color: #464A4C;
+}
+span::before{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    animation-name: ytroi;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    content: "TEACHING";
+}
+
+@keyframes ytroi{
+  0%   {background-color: #5A3294;
+             content: "TEACHING";}
+  50%    {background-color: #31ff08;
+            content: "Learing";} 
+  100% {
+        background-color: rgb(250, 144, 4);
+        content: "CODINH";
+  }
+}
