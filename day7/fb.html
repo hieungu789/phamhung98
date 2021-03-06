@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-Đăng nhập hoặc đăng kí</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+            
+        .login {
+            background-color: crimson;
+            text-align: center;
+            margin-top: 60px;
+            width: 400px;
+            height: 350px;
+            font-family: inherit;
+            
+        }
+
+        .margin-style {
+            height: 50px;
+            width: 365px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            margin-top: 15px;
+            padding: 5px;
+        }
+
+        .buton {
+            margin-top: 15px;
+            text-align: center;
+            width: 365px;
+            height: 50px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            color: #fff;
+            background-color: #166FE5;
+            font-size: 20px;
+            line-height: 48px;
+        }
+
+        .login a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 48px;
+
+        }
+
+        .buton-1 {
+            width: 190px;
+            height: 50px;
+            border-radius: 6px;
+            background-color: #36A420;
+            color: #fff;
+            border-radius: 6px;
+            font-size: 17px;
+            line-height: 48px;
+            padding: 0 16px;
+            font-weight: bold;
+            margin-top: 30px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login">
+            <input class="margin-style" id="username" type="" name="username" placeholder="Email hoặc số điện thoại"
+                required />
+            <br>
+            <input class="margin-style" id="Password" type="password" name="Password" placeholder="Mật Khẩu" required>
+            <br>
+            <a href="#"><button class="buton" type="submit">Đăng Nhập</button></a>
+            <br>
+            <a href="#">Quên Mật Khẩu</a>
+            <hr>
+            <a href="#"><button class="buton-1" type="submit">Tạo Tài khoản mới</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
