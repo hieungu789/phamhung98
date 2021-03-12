@@ -92,7 +92,7 @@ convert(5,30000)
 // bai 3:
 function theki(number){
     let z;
-    z = Math.floor((number/100)+1)
+    z = Math.floor(((number-1)/100)+1)
     console.log("The ki:",z)
 }
 theki(2021)
