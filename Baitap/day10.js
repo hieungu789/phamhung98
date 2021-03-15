@@ -35,23 +35,30 @@ function CheckMonth(n, nam) {
         }
     }
 }
-CheckMonth(2, 2016)
+CheckMonth(2, 1800)
 // Bài 3: Tính tổng các chữ số trong 1 số nguyên dương
 // nhập 5 thì sẽ là 1+2+3+4+5
 function integerr(n) {
-    if(n == 0) // điều kiện dừng 
-    return 0;
-  return n + integerr(n-1);
+    if (n == 0) // điều kiện dừng 
+        return 0;
+    return n + integerr(n - 1);
 
 }
 // bài 4 In ra một chuỗi, nếu chuỗi có độ dài lớn hơn 10 ký tự thì thực hiện cắt chuỗi lấy 10 ký tự và hiển thị phía sau là dấu ba chấm (10 kí tự + ...)
 function Splitstring(n) {
     let str = n.length;
+
     let ves = n.substring(0, 10);
-    console.log("Độ dài chuỗi vừa nhập là", str)
-    console.log(ves, "...")
+    if (str > 10) {
+        console.log("Chuỗi cắt là", ves + "...")
+        console.log("Độ dài chuỗi", str)
+    }
+    else {
+        console.log(n)
+    }
+
 }
-Splitstring("tôi học lớp web ở techmaster")
+Splitstring("tôi học ở techmaster ")
 /** bài 5 Viết hàm có tính năng translate. 
  * Truyền vào hàm tên đất nước bạn muốn biết về lời chào ở nuớc họ: 
  * French, Hawaiian, Germany, Italy, Croatia. Nếu không nhập gì chúng tôi có thể cho rằng bạn 
