@@ -37,12 +37,16 @@ function CheckMonth(n, nam) {
 }
 CheckMonth(2, 1800)
 // Bài 3: Tính tổng các chữ số trong 1 số nguyên dương
-// nhập 5 thì sẽ là 1+2+3+4+5
-function integerr(n) {
-    if (n == 0) // điều kiện dừng 
-        return 0;
-    return n + integerr(n - 1);
+function songduong(value){
 
+    let sum = 0;
+
+while (value) {
+    sum += value % 10;
+    value = Math.floor(value / 10);
+}
+
+console.log(sum);
 }
 // bài 4 In ra một chuỗi, nếu chuỗi có độ dài lớn hơn 10 ký tự thì thực hiện cắt chuỗi lấy 10 ký tự và hiển thị phía sau là dấu ba chấm (10 kí tự + ...)
 function Splitstring(n) {
@@ -86,3 +90,207 @@ function translate(n) {
     }
 }
 translate("French")
+// function avs(a) {
+//     if (a < 1) {
+//         return `Sai mời nhập lại`
+//     }
+//     if (a === 2) {
+//         return `Là số nguyên tố`
+//     }
+//     let test = 1;
+//     for (let i = 2; i < a; i++) { // chạy i = 2 đến i = số a vừa nhập
+//         if (a % i === 0) {
+//             test++;// test là biến đếm sô lần a%i==0
+
+//         }
+//     }
+//     if (test === 1) {
+//         console.log(a + ": Là số nguyên tố");
+//     }
+//     else {
+//         console.log(a + ": Không phải là số nguyên tố");
+//     }
+// }
+// function bai6(a, b) {
+//     for (i = a; i <= b; i++) {
+//         let test = 1;
+//         for (j = 2; j <= i / 2; j++) {
+//             if (i % j == 0) {
+//                 test = 0;
+//                 // break;
+//             }
+//         }
+//         if (test == 1) {
+//             console.log(i + " : là số Nguyên tố");
+//         }
+//         else {
+//             console.log(i + " : không phải là sô nguyên tố");
+//         }
+//     }
+// }
+
+// function bai5(n) {
+//     if(n<1){
+//         return `Mời nhập lại`
+//     }
+//     let test = 1
+//     for (i = 2; i <= n; i++) {
+//         let test = 1;
+//         for (j = 2; j <= i / 2; j++) {
+//             if (i % j == 0) {
+//                 test = 2;
+//                 // break;
+//             }
+//         }
+//         if (test == 1) {
+//             console.log(i + " : là số Nguyên tố");
+//         }
+//         // else {
+//         //     console.log(i + " : không phải là sô nguyên tố");
+//         // }
+//     }
+// } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
