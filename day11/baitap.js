@@ -44,7 +44,7 @@ function getSecondLargest(nums) {
 }
 getSecondLargest([1, 7, 2, 4, 8, 5])
 // bài 4: Trả về Vị trí đầu tiên của số lẻ, vị trí cuối cùng của số chẵn trong mảng bất kì.
-function kiemTraViTri(Array) {
+function kiemTraSoLe(Array) {
     for (let i = 0; i <= Array.length; i++) {
         if (Array[i] % 2 !== 0) {
             console.log("Số lẻ ở vị trí đầu tiên", Array[i])
@@ -52,7 +52,7 @@ function kiemTraViTri(Array) {
         }
     }
 }
-function KiemTraSoChan(arr) {
+function kiemTraSoChan(arr) {
     for (let i = arr.length - 1; i >= 0; i--) {
         if (arr[i] % 2 == 0) {
             console.log("Số Chẵn ở vị trí cuối cùng", arr[i])
