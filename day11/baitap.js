@@ -51,11 +51,9 @@ function kiemTraViTri(Array) {
             break;
         }
     }
-}
-function KiemTraSoChan(arr) {
-    for (let i = arr.length - 1; i >= 0; i--) {
-        if (arr[i] % 2 == 0) {
-            console.log("Số Chẵn ở vị trí cuối cùng", arr[i])
+    for (let j = Array.length - 1; j >= 0; j--) {
+        if (Array[j] % 2 == 0) {
+            console.log("Số Chẵn ở vị trí cuối cùng", Array[j])
             break;
         }
     }
