@@ -13,9 +13,10 @@ function perfectNumber(N){
                 sum += j; // cộng các ước lại
         }
         if(sum == i)
-            console.log(`Những số hoàn hảo là`,i)
+            console.log(`Số hoàn hảo là`,i)
     }
 }
+perfectNumber(1000)
 // Bài 2: Tìm số nhỏ nhất và lớn nhất trong mảng số nguyên
 function minMax(arr) {
     let min = arr[0];
