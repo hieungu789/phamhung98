@@ -70,16 +70,44 @@ function reverseString(str) {
 }
 // bài 6:  Sắp xếp mảng số nguyên theo chiều tăng dần và giảm dần.
 //  tăng dần 
+// dùng sort
 function TangDan(numArray) {
     numArray.sort(function (a, b) {
         return a - b;
     });
     console.log(numArray);
 }
-// giảm dầm
+// vòng lặp
+function tangDan(arr){
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] > arr[j]) {
+                // Nếu arr[i] > arr[j] thì hoán đổi giá trị của arr[i] và arr[j]
+                let temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        console.log(arr[i]);
+    }
+}
+// giảm dầm sort
 function GiamDan(numArray) {
     numArray.sort(function (a, b) {
         return b - a;
     });
     console.log(numArray);
+}
+// vòng lặp
+function giamDan(arr){
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] < arr[j]) {
+                let temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        console.log(arr[i]);
+    }
 }
