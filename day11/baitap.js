@@ -1,19 +1,19 @@
 // bài 1:Cho một số nguyên dương N, viết hàm in ra màn hình những số hoàn hảo nhỏ hơn N (số hoàn hảo là số bằng tổng các ước số của nó mà không kể chính nó).
-function perfectNumber(N){
+function perfectNumber(N) {
     let sum;
-    if(N<0){
-        return`Sai rồi mời nhập lại`
+    if (N < 0) {
+        return `Sai rồi mời nhập lại`
     }
-    for(let i = 2; i <= N; i++) // chạy từ 2 đến số đã cho
+    for (let i = 2; i <= N; i++) // chạy từ 2 đến số đã cho
     {
         sum = 1;
-        for(let j = 2; j <= i/2; j++)//Vòng for để lấy ước 
+        for (let j = 2; j <= i / 2; j++)//Vòng for để lấy ước 
         {
-            if(i%j == 0)
+            if (i % j == 0)
                 sum += j; // cộng các ước lại
         }
-        if(sum == i)
-            console.log(`Số hoàn hảo là`,i)
+        if (sum == i)
+            console.log(`Số hoàn hảo là`, i)
     }
 }
 perfectNumber(1000)
@@ -51,22 +51,15 @@ function kiemTraViTri(Array) {
             break;
         }
     }
-}
-function KiemTraSoChan(arr) {
-    for (let i = arr.length - 1; i >= 0; i--) {
-        if (arr[i] % 2 == 0) {
-            console.log("Số Chẵn ở vị trí cuối cùng", arr[i])
+    
+    for (let j = Array.length - 1; j >= 0; j--) {
+        if (Array[j] % 2 == 0) {
+            console.log("Số Chẵn ở vị trí cuối cùng", Array[j])
             break;
         }
     }
-}
-// bài 5:  In một chuỗi cho trước theo thứ tự ngược lại (Ví dụ: Hello in thành olleH)
-function reverseString(str) {
-    let a = "";// gán cho kí tự trống
-    for (let i = str.length - 1; i >= 0; i--) {
-        a += str[i];
-    }
-    console.log("Chữ đảo ngược là: ", a)
+    
+    
 }
 // bài 6:  Sắp xếp mảng số nguyên theo chiều tăng dần và giảm dần.
 //  tăng dần 
@@ -78,7 +71,7 @@ function TangDan(numArray) {
     console.log(numArray);
 }
 // vòng lặp
-function tangDan(arr){
+function tangDan(arr) {
     for (let i = 0; i < arr.length; i++) {
         for (let j = i + 1; j < arr.length; j++) {
             if (arr[i] > arr[j]) {
@@ -99,7 +92,7 @@ function GiamDan(numArray) {
     console.log(numArray);
 }
 // vòng lặp
-function giamDan(arr){
+function giamDan(arr) {
     for (let i = 0; i < arr.length; i++) {
         for (let j = i + 1; j < arr.length; j++) {
             if (arr[i] < arr[j]) {
@@ -108,6 +101,6 @@ function giamDan(arr){
                 arr[j] = temp;
             }
         }
-        console.log(arr[i]);
+        console.log(arr[i])
     }
 }
