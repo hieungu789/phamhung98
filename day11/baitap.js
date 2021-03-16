@@ -74,10 +74,38 @@ function TangDan(numArray) {
     });
     console.log(numArray);
 }
+//
+function tangDan(arr){
+    for (i = 0; i < arr.length;i++){
+        for (j = i+1; j < arr.length;j++){
+            if (arr[i]>arr[j]) //Tăng dần or Giảm dần a[i]<a[j]
+            {
+                 k = arr[i];  //k là biến tạm lưu giá trị
+                 arr[i] = arr[j];  //thực hiện đổi chỗ lấy a[j]
+                 arr[j] = k;  //thực hiện đổi chỗ lấy a[i]
+            }
+        }
+        console.log(arr[i])
+    }
+}
 // giảm dầm
 function GiamDan(numArray) {
     numArray.sort(function (a, b) {
         return b - a;
     });
     console.log(numArray);
+}
+// 
+function giamDan(arr){
+    for (i = 0; i < arr.length;i++){
+        for (j = i+1; j < arr.length;j++){
+            if (arr[i]<arr[j]) //Tăng dần or Giảm dần a[i]<a[j]
+            {
+                 k = arr[i];  //k là biến tạm lưu giá trị
+                 arr[i] = arr[j];  //thực hiện đổi chỗ lấy a[j]
+                 arr[j] = k;  //thực hiện đổi chỗ lấy a[i]
+            }
+        }
+        console.log(arr[i])
+    }
 }
