@@ -1,21 +1,24 @@
 // bài tập 1:
 function doVui(n) {
-    let N;
-    if (n % 2 === 0) {
-        N = n 
-    } else {
-        N = n * 3 + 1
-    }
-    console.log(N);
-    let bienDem=0
-    while(N===1){
-        if(N/2==1){
-            bienDem++;
+     let N;
+    // if (n % 2 === 0) {
+    //     N = n 
+    // } else {
+    //     N = n * 3 + 1
+    // }
+    // console.log(N);
+    let bienDem=0;
+
+    while(n===1){
+        if(n%2===0){
+           N=n/2;
+        //    n=N;
         }else{
-            return -1;
+           n=n*+1
+
         }
     }
-    console.log(bienDem)
+    console.log(N)
 }
 
 // bài 2

@@ -37,7 +37,7 @@ function getSecondLargest(nums) {
     nums.sort(function (x, y) { //sắp xếp theo thứ tự giảm dần
         return y - x;
     });
-    for (var j = 1; j < nums.length; j++) {
+    for (let j = 1; j < nums.length; j++) {
         if (nums[j - 1] !== nums[j]) {// lấy ra số thứ 2
             return nums[j];
         }
@@ -119,13 +119,4 @@ function giaiThua(n) {
         multiply *= i
     }
     console.log("Số Giai thừa là:", multiply)
-}
-function doVui(n){
-    let bienDem =0;
-    for(i=1;i<n;i++){
-        if(n%i===0){
-            bienDem++
-        } 
-    }
-    console.log(bienDem)
 }
