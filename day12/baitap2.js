@@ -95,7 +95,7 @@ function giaCuocTaxi() {
         giaCuoc = 400 * b + (soKm * 11000) + 9000
         console.log("Số tiền cần phải trả sau khi chờ:", giaCuoc)
         console.log("Thời gian chờ là",b +" Phút")
-    }
+    }else
     if (soKm > 30 && b > 1) {
         giaCuoc = 400 * b + (soKm * 11000) + 9000
         console.log("Số tiền cần phải trả sau khi chờ", giaCuoc)

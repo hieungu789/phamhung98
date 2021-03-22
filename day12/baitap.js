@@ -1,24 +1,6 @@
 // bài tập 1:
 function doVui(n) {
-     let N;
-    // if (n % 2 === 0) {
-    //     N = n 
-    // } else {
-    //     N = n * 3 + 1
-    // }
-    // console.log(N);
-    let bienDem=0;
-
-    while(n===1){
-        if(n%2===0){
-           N=n/2;
-        //    n=N;
-        }else{
-           n=n*+1
-
-        }
-    }
-    console.log(N)
+    
 }
 
 // bài 2
@@ -110,3 +92,57 @@ function veTamGiacCan(m) {
     document.write(str)
 }
 veTamGiacCan(4)
+// vẽ hình thoi\
+function veTamGiacVuongTwo(m) {
+    document.write("<br>")
+    if (m <= 0 || Number.isInteger(m) === false) {
+        document.write("Nhập sai rồi dữ liệu rồi nhập lại đi");
+        return;
+    }
+    let str = "";
+    for (let i = 0; i < m; i++) {
+        str += "<br>"
+        for (let j = 0; j <= i; j++) {
+
+            str += "* ";
+        }
+    }
+    for (let i = 0; i < m; i++) {
+        str += "<br>"
+        for (let j = m; j > i; j--) {
+
+            str += "* ";
+        }
+    }
+    document.write(str)
+}
+veTamGiacVuongTwo(5)
+function veTamGiacCanTwo(m) {
+    document.write("<br>")
+    if (m <= 0 || Number.isInteger(m) === false) {
+        document.write("Nhập sai rồi dữ liệu rồi nhập lại đi");
+        return;
+    }
+    let str = "";
+    for (let i = 1; i <= m; i++) {
+        str += "<br>"
+        for (let j = 0; j < m- i; j++) {
+            str += "* ".fontcolor("white")
+        }
+        for (j = 0; j < (2*i-1); j++) {
+            str += "* "
+        }
+    }
+    for (let i = 1; i <= m; i++) {
+        str += "<br>"
+        for (let j = 1; j < i; j++) {
+            str += "* ".fontcolor("white ")
+        }
+        for (j = 0; j < (m * 2 - (2 * i - 1)); j++) {
+            str += "* "
+        }
+    }
+
+    document.write(str)
+}
+veTamGiacCanTwo(5)
