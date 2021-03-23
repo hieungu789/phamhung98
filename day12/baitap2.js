@@ -19,7 +19,7 @@ function bai1(a, b) {
 // bài2:Chèn phần tử có giá trị X vào phía sau phần tử có giá trị lớn nhất trong mảng.
 function Max(arr) {
     let max = arr[0];
-    let dem =0;
+    let dem = 0;
     for (let i = 1; i < arr.length; i++) {
         if (arr[i] > max) {
             max = arr[i];
@@ -27,7 +27,7 @@ function Max(arr) {
         }
     }
     // console.log(dem);
-    arr.splice(dem+1,0,'100')
+    arr.splice(dem + 1, 0, '100')
     console.log(arr)
     // console.log("Số lớn nhất là", max)
 }
@@ -91,14 +91,46 @@ function giaCuocTaxi() {
         console.log("Số tiền cần trả là:", giaCuoc)
         console.log("Thời gian chờ là 0")
     }
-    if (1 < soKm && soKm && b > 1) {
+    if (soKm < 1, b > 1) {
+        giaCuoc = 9000+b*400
+        console.log("Số tiền cần trả là:", giaCuoc)
+        console.log("Thời gian chờ là", b + " Phút")
+    } else if (1 < soKm && soKm && b > 1) {
         giaCuoc = 400 * b + (soKm * 11000) + 9000
         console.log("Số tiền cần phải trả sau khi chờ:", giaCuoc)
-        console.log("Thời gian chờ là",b +" Phút")
-    }else
-    if (soKm > 30 && b > 1) {
+        console.log("Thời gian chờ là", b + " Phút")
+    } else if (soKm > 30 && b > 1) {
         giaCuoc = 400 * b + (soKm * 11000) + 9000
         console.log("Số tiền cần phải trả sau khi chờ", giaCuoc)
-        console.log("Thời gian chờ là",b+" Phút")
+        console.log("Thời gian chờ là", b + " Phút")
     }
 }
+// 
+function giataxi() {
+    let soKM = prompt("nhap so km");
+    let b = prompt("nhap thoi gian  cho");
+    let giacuoc = 0;
+  
+    if (soKM < 0 && b < 0) {
+      return "nhap lai du lieu";
+    }
+  
+    if (soKM <= 1) {
+      giacuoc = 9000;
+    } else if (soKM > 1 && soKM < 31 ) {
+      giacuoc = 9000 + (soKM-1) * 11000;
+    } else if (soKM >= 31) {
+      giacuoc = 9000 + (29 * 11000) + (soKM - 30) * 9500;
+    }
+  
+    if(b>0){
+        let a=0;
+        a = 20000*b;
+        giacuoc+=a
+    }
+    
+    
+    console.log("KM di: ", soKM);
+    console.log("thoi gian cho la:",b,"gio")
+    console.log("so tien la: ",giacuoc);
+  }
