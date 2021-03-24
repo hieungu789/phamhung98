@@ -1,5 +1,4 @@
 // bài 1:
-
 let people = [
     { name: "Hà", age: 35, },
     { name: "Thắng", age: 25, },
@@ -10,7 +9,20 @@ let people = [
 
 ];
 
-console.log(avgage)
+function ageAvg(arrays) {
+    let sum = 0;
+    let avg = 0;
+    for (let i of arrays) {
+        console.log(i.age)
+        sum = sum + i.age
+
+    }
+    console.log("sum:", sum)
+    avg = sum / arrays.length
+    return Math.floor(avg)
+}
+
+console.log("Avg", ageAvg(people))
 // bài 2:Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Anh'', age: 20 }. Viết hàm sắp mảng theo tuổi học viên từ cao đến thấp
 let user = [
     {
@@ -59,11 +71,25 @@ bouncer([false, true, null, 24, undefined, NaN, 0, "", 1, 2])
 //bài 4
 let palindrome = str => {
     // chuyển qua lowercase trước
-    // str = str.toLowerCase()
+    str = str.toLowerCase()
     // chuyển thành array, reverse rồi so sánh
-    return str === str.split('').reverse().join('')
+    return str === str.split(" ").reverse().join("")
 }
-palindrome('racecar')
+palindrome('Racecar')
+// function kiemTraChuoiDoiXung(str) {
+//     let reverseStr = "";
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         reverseStr = reverseStr + str[i];
+//     }
+//     reverseStr = reverseStr.split(" ").join("").toLowerCase();
+//     let newStr = str.split(" ").join("").toLowerCase();
+
+//     if (newStr === reverseStr) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 // bài 5:
 function consoLea(arr) {
     var max = arr[0].length;
@@ -72,4 +98,19 @@ function consoLea(arr) {
     return result;
 }
 consoLea(["abg", "aa", "ad", "c", "vcd"])
-
+// function max(arr) {
+//     var max = arr[0].length;
+//     for (i = 1; i < arr.length; i++) {
+//         if (max < arr[i].length) {
+//             max = arr[i].length
+//         }
+//     }
+//     let array = []
+//     for (let i = 0; i < arr.length; i++) {
+//         if (max === arr[i].length) {
+//             array.push(arr[i])
+//         }
+//     }
+//     return array
+// }
+// max(["abg", "aa", "ad", "c", "vcd"])
