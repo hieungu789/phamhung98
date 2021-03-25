@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo"></p> 
+    <button onclick=pressOnClick>Click Me</button> -->
+
+    <div class="table">
+        <div class="title">
+            <h1>Đoán Số</h1>
+        </div>
+        <div class="word">
+            <p>Bạn có 10 lượt dự đoán số</p>
+            <p>Khoảng giá trị từ 1 đến 100</p>
+        </div>
+        <div class="inPut">
+            <input id="numberCheck" type="number">
+            <button id="Mybtn" onclick ="guess()">Kiểm tra</button>
+            
+        </div>
+        <button style="margin-bottom: 20px;" id="MyBTN" onclick="choiLai()">Chơi lại</button>
+        <p id="alert"></p>
+        <div>
+            <p id="result"></p>
+        </div>
+
+    </div>
+    <script src="dom-demo.js"></script>
+</body>
+</html>

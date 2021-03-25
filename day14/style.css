@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+.table{
+    width: 50%;
+    background-color: aqua;
+    text-align: center;
+    margin: auto;
+}
+.title{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.word{
+padding-bottom: 20px;
+}
+.inPut{
+    padding-bottom: 50px;
+}
