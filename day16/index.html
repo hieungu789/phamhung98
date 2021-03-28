@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi tiền tệ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <p>Số lượng: <input id="numberAcheck" type="number"></p>
+        </div>
+        <div class="boxAl">
+            <p>Từ:
+                <select name="Change" id="from">
+                    <option value="USD">Đô La</option>
+                    <option value="EURO">Bảng Anh</option>
+                    <option value="VND">Việt Nam Đồng</option>
+                </select>
+            </p>
+        </div>
+        <div class="boxAl">
+            <p>Sang:
+                <select name="Change" id="to">
+                    <option value="USD">Đô La</option>
+                    <option value="EURO">Bảng Anh</option>
+                    <option value="VND">Việt Nam Đồng</option>
+                </select>
+            </p>
+        </div>
+        <p id="outputMoney"></p>
+        <div>
+            <input class="changeMoney" type="submit" value="Chuyển Đổi" onclick="quyDoiTienTe()">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

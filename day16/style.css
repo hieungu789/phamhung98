@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: #FFD9BF;
+}
+#container{
+    width: 30%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    background-color:#FFE680;
+    box-shadow: 1px 1px 1px 1px #888888;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+}
+#numberAcheck{
+    height: 35px;
+    width: 70%;
+    margin-top: 10px;
+    border: 2px solid rgb(168, 162, 162);
+    background-color: #FFF2BF;
+}
+#from{
+    width: 70%;
+    height: 35px;
+    margin-left: 45px;
+    margin-top: 10px;
+    background-color: #FFF2BF;
+}
+#to{
+    width: 70%;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 30px;
+    background-color: #FFF2BF;
+}
+#outputMoney{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.changeMoney{
+    margin-bottom: 20px;
+    height: 30px;
+    width: 40%;
+    box-shadow: 1px 1px 1px 1px #888888;
+    border-radius: 2pxs;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.changeMoney:hover{
+    background-color: rgb(196, 187, 187);
+}
