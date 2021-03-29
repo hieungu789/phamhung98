@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.container{
+    width: 40%;
+    background-color: aqua;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+#numberAcheck{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    height: 30px;
+   
+}
+.word{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#outputYear{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+}
+.tinhRa{
+    width: 40%;
+    box-shadow: 1px 1px 1px 1px gray;
+    margin-bottom: 30px;
+    height: 35px;
+}
+.BMI{
+
+    width: 40%;
+    background-color: rgb(90, 233, 233);
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px gray;
+    padding-top: 30px;
+}
+#numberOne{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    height: 30px;
+}
+#numberBcheck{
+    margin-bottom: 30px;
+    margin-left: 20px;
+    height: 30px;
+}
+.tinhRa:hover{
+    cursor: pointer;
+    background-color: rgb(70, 199, 216);
+}
+#outputBMI{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+}

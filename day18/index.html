@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <p class="word">Mời nhập năm sinh: <input id="numberAcheck" type="number"></p>
+
+        <p id="outputYear"></p>
+
+        <input class="tinhRa" type="submit" value="Tính ra" onclick="quyDoiTienTe()">
+    </div>
+    <div class="BMI">
+        <p>Mời nhập cân Nặng: <input placeholder="Đơn vị là KG" id="numberOne" type="number"></p>
+        <p>Mời nhập Chiều Cao: <input placeholder="Nhập CM" id="numberBcheck" type="number"></p>
+        <p id="outputBMI"></p>
+        <input class="tinhRa" type="submit" value="Tính ra" onclick="BMI()">
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
