@@ -21,7 +21,7 @@ function BMI() {
     console.log(a)
     console.log(inputBMIcao)
 
-    if (a > 500 && inputBMIcao > 2 || a < 0 && inputBMIcao < 0 || inputBMIcao == 0 && a == 0) {
+    if (a > 500 && inputBMIcao > 2 || a < 0 ||inputBMIcao < 0 || inputBMIcao == 0 && a == 0) {
         outputBMI.innerHTML = "Mời nhập lại hoặc kiểm tra Cân nặng và chiều cao vừa nhập"
     } else {
         let c = a / (inputBMIcao * inputBMIcao)
