@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: rgb(179, 177, 177);
+}
+#container{
+    background-color: rgb(105, 105, 105);
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgb(179, 177, 177);
+}
+#ket_qua{
+    height: 120px;
+}
+#ket_qua_cu{
+    text-align: right;
+    height:20px;
+    margin:0 20px;
+    padding-top:20px;
+    font-size:25px;
+    color:#919191;
+}
+#xuat_ket_qua {
+    text-align: right;
+    height:60px;
+    padding-top: 30px;
+    font-size: 40px;
+    
+
+}
+
+#gia_tri_xuat{
+    margin: auto;
+    height: 50px;
+    width: 80%;
+    padding-left: 20px;
+    background-color: rgb(167, 175, 175);
+    border: 1px solid gray;
+}
+.ban_phim{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.con_so{
+    width:50px;
+    height:50px;
+    margin: 15px;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight:bold;
+    font-size:16px;
+    background-color: #a3a9ad;
+    cursor: pointer;
+}
+button:nth-child(4) {
+    font-size: 20px;
+    background-color: #ffa500;
+}
+.trong{
+    width:50px;
+    height:50px;
+    margin: 15px;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight:bold;
+    font-size:16px;
+    background-color: rgb(105, 105, 105);
+}
