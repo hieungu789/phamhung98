@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ứng Dụng Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="title">
+            <h1>Kiểm tra Javascript </h1>
+        </div>
+        <div class="quiz"></div>
+        <div class="button" id="next" onclick="goNext()"><a href="#">Next</a></div>
+        <div class="button" id="prev" onclick="goPrev()" style="display: none;"><a href="#">Preview</a></div>
+        <div class="button" id="replay" onclick="goReplay()" style="display: none;"><a href="#">Replay</a></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

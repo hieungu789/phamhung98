@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+#container{
+    background-color: pink;
+
+}
+a{
+    text-decoration: none;
+
+}
+.box-1{
+    display: grid;
+    padding: 30px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    
+}
+.shadow{
+    background-color: blue;
+    width: 100%;
+    height:200px;
+}
+@media (max-width:600px) {
+    .box-1{
+        grid-template-columns: auto ;
+        padding: 15px;
+    }
+}
+/* bài 2 */
+.box-2{
+    display: grid;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 50px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+
+}
+.shadow1{
+    background-color: blue;
+    width: 100%;
+    height: 200px;
+}
+@media(max-width:600px) {
+    .box-2{
+        grid-template-columns: auto;
+        padding: 30px;
+        padding-top: 50px;
+    }
+}
+/* Bài 3 */
+.box-3{
+   display: flex;
+   padding-left: 30px;
+   padding-right: 30px;
+}
+.screen1{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 15px;
+    margin-top: 0;
+    padding-top: 30px;
+    padding-right: 15px;
+    
+
+}
+.screen2{
+    padding-top: 30px;
+    padding-left: 15px;
+}
+.shadow3{
+    background-color: blue;
+    height: 100px;
+    width: 400px;
+}
+.shadow4{
+    background-color: blue;
+    height: 500px;
+    width: 400px;
+}
+@media(max-width:600px) {
+    .box-3{
+        flex-direction: column;
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    .screen1{
+        /* background-color: green; */
+        padding-right: 0;
+        padding-top: 15px;
+        margin-top: 30px;
+    }
+    .screen2{
+        /* background-color: green; */
+        padding-left: 0;
+    }
+    .shadow3{
+        width: 225px;
+    }
+    .shadow4{
+        width: 465px;
+        height: 300px;
+    }
+}
+/* bài 4 */
+/* .box-4{
+} */
+.screen-0{
+    background-color:  green;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:20%;
+    padding: 0 15px 0 15px;
+}
+.screen-1{
+    background-color: burlywood;
+    width: 100%;
+    display: flex;
+    padding: 0px 7.5px 0px 7.5px;
+}
+.shadow-1{
+    width: 90px;
+    height: 30px;
+    background-color: blue;
+    text-align: center;
+    padding: 5px;
+}
+.shadow-2{
+    margin: 15px 7.5px 15px 7.5px;
+    background-color: blue;
+    width: 100%;
+    height: 500px;
+}
+@media (max-width:600px) {
+    .box-4{
+        display: flex;
+        flex-direction: column;
+    }
+    .screen-0{
+        grid-gap: 15px;
+        background-color: rgb(255, 208, 119);
+    }
+    .screen-1{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 208, 119);
+        padding-right: 23px;
+    }
+    .shadow-2{
+        height: 250px;
+    }
+}
+/* bài 5 */
+.box-5{
+
+}
+.header{
+    background-color: rgb(223, 219, 219);
+    width: 100%;
+    display: flex;
+}
+.screen-5{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap:15px;
+    padding: 15px;
+    height: 60px;
+    width: 225px;
+}
+.middle{
+    width: 100%;
+    background-color: oldlace;
+    height: 60px;
+
+}
+.screen-51{
+    width: 125px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.shadow-7{
+    background-color: rgb(7, 7, 184);
+    width: 90px;
+    height: 30px;
+}
+.shadow-5{
+    background-color: rgb(7, 7, 184);
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+}
+.screen-6{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 15px;
+}
+.shadow-6{
+    background-color: blue;
+    width: 100%;
+    height: 500px;  
+}
+@media (max-width:600px) {
+    .middle{
+        width: 0%;
+    }
+    .header{
+        background-color: white;
+    }
+    .screen-5{
+        width: 90%;
+        grid-gap:15px;
+        margin-left: 0;
+    }
+    .screen-51{
+        width: 14%;
+    }
+    .screen-6{
+        padding-top: 0;
+    }
+    .shadow-5{
+        margin-left: 0;
+        width: 60px;
+        height: 30px;
+    }
+    .shadow-7{
+        width: 60px;
+        height: 30px;
+    }
+
+}
