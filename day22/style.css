@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    margin: auto;
+    margin: 0;
 }
 #container{
     background-color: pink;
@@ -46,64 +46,48 @@ a{
 @media(max-width:600px) {
     .box-2{
         grid-template-columns: auto;
-        padding: 30px;
+        padding:15px;
         padding-top: 50px;
     }
 }
 /* Bài 3 */
 .box-3{
-   display: flex;
-   padding-left: 30px;
-   padding-right: 30px;
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap:30px; 
+    padding: 0 30px 0 30px;
 }
 .screen1{
     display: grid;
-    grid-template-columns: auto auto ;
-    grid-gap: 15px;
-    margin-top: 0;
-    padding-top: 30px;
-    padding-right: 15px;
-    
+    grid-template-columns: auto auto;
+    grid-gap:15px;
+    width: 100%; 
+    height: 200px;
+}
 
-}
-.screen2{
-    padding-top: 30px;
-    padding-left: 15px;
-}
 .shadow3{
     background-color: blue;
-    height: 100px;
-    width: 400px;
+    width: 100%;
 }
 .shadow4{
     background-color: blue;
+    width: 100%;
     height: 500px;
-    width: 400px;
+
+   
 }
-@media(max-width:600px) {
+ @media(max-width:600px) {
     .box-3{
-        flex-direction: column;
-        padding-right: 0%;
-        padding-left: 0%;
-    }
+        padding: 0 15px 0 15px ;
+        display: grid;
+        grid-template-columns: auto;
+    } 
     .screen1{
-        /* background-color: green; */
-        padding-right: 0;
-        padding-top: 15px;
-        margin-top: 30px;
+        width: 100%;
     }
-    .screen2{
-        /* background-color: green; */
-        padding-left: 0;
-    }
-    .shadow3{
-        width: 225px;
-    }
-    .shadow4{
-        width: 465px;
-        height: 300px;
-    }
-}
+} 
 /* bài 4 */
 /* .box-4{
 } */
@@ -114,20 +98,27 @@ a{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap:20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 0 15px 0 15px;
 }
 .screen-1{
     background-color: burlywood;
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    margin-right: 0;
     padding: 0px 7.5px 0px 7.5px;
 }
+
 .shadow-1{
     width: 90px;
     height: 30px;
     background-color: blue;
     text-align: center;
     padding: 5px;
+    /* margin: 10px 0px 10px 0; */
 }
 .shadow-2{
     margin: 15px 7.5px 15px 7.5px;
@@ -153,12 +144,16 @@ a{
     .shadow-2{
         height: 250px;
     }
+    .shadow-1{
+        height: 30px;
+        width: 60px;
+    }
 }
 /* bài 5 */
 .box-5{
 
 }
-.header{
+.head{
     background-color: rgb(223, 219, 219);
     width: 100%;
     display: flex;
@@ -179,8 +174,7 @@ a{
 }
 .screen-51{
     width: 125px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 15px 15px 15px 15px;
 }
 .shadow-7{
     background-color: rgb(7, 7, 184);
@@ -204,31 +198,204 @@ a{
     height: 500px;  
 }
 @media (max-width:600px) {
-    .middle{
-        width: 0%;
+    .box-5{
+        justify-content: space-between;
     }
-    .header{
+    .middle{
+        display: none;
+    }
+    .head{
         background-color: white;
     }
     .screen-5{
-        width: 90%;
-        grid-gap:15px;
-        margin-left: 0;
-    }
-    .screen-51{
-        width: 14%;
+        width: 100%;
+        grid-gap:35px;
+        padding-right: 35px;
     }
     .screen-6{
         padding-top: 0;
     }
     .shadow-5{
-        margin-left: 0;
         width: 60px;
         height: 30px;
     }
     .shadow-7{
+        margin-left:30px;
         width: 60px;
         height: 30px;
     }
 
 }
+/* bai 6 */
+.container{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: chartreuse; */
+}
+#logo{
+    margin: 15px;
+    background-color: rgb(130, 131, 134);
+    cursor: pointer;
+}
+img{
+    width: 100px;
+    height: 30px;
+}
+.menu{
+    display: flex;
+    margin: 15px 15px 15px 60px;
+    width: 70%;
+}
+.menu-list{
+    background-color: rgb(130, 131, 134);
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    padding: 5px;
+    
+}
+.login{
+    background-color: rgb(130, 131, 134);
+    height: 20px;
+    width: 20%;
+    text-align: center;
+    margin: 20px 15px 20px 50px;
+    align-items: center;
+    justify-content: center;
+   
+} 
+p{
+    
+    width: 50%;
+    cursor: pointer;
+}
+/* menu mobile */
+.header{
+    /* background-color: rgb(114, 124, 103); */
+    display: flex;
+    flex-direction: column;
+    width: 93.8%;
+    padding: 5px 0 5px 0;
+    display: none;
+    margin: 15px;
+}
+.logo{
+    margin: 15px 15px 15px 0;
+    cursor: pointer; 
+    display: none;
+}
+.icon{
+    font-size: 30px;
+    
+}
+.mobileMenu{
+    width: 100%;
+    /* padding: 15px; */
+    display: none;
+}
+.sub-list{
+    background-color: rgb(81, 139, 86);
+    text-align: center;
+    width: 100%;
+    border:1px solid gray;
+    padding: 5px;
+    display: none;
+}
+.mobileMenu.show{
+    display: block;
+}
+.middle1{
+    height: 500px;
+    margin: 15px;
+    background-color: blue;
+}
+@media (max-width:600px) {
+    .container{
+        display: none;
+    }
+    .header{
+        display: block;
+    }
+    .sub-list{
+        display: block;
+    }
+    .logo{
+        display: block;
+    }
+}
+
+
+
+/* bài 7 */
+.bottom{
+    width: 100%;
+    display: flex;
+}
+.team-1{
+    background-color: blue;
+    height: 500px;
+    width: 100%;
+    margin: 15px;
+}
+.team-2{
+    width: 30%;
+    margin: 15px 15px 15px 0;
+    background-color: blue;
+    height: 500px;
+}
+.header-2{
+    /* background-color: rgb(114, 124, 103); */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    display: none;
+}
+.logo-2{
+    /* margin: 15px; */
+    cursor: pointer; 
+    display: none;
+}
+.icon-2{
+    font-size: 30px;
+}
+.mobile-Menu{
+    width: 100%;
+    display: none;
+}
+.mobile-Menu.show{
+    display: block;
+}
+@media (max-width:600px) {
+    .container{
+        display: none;
+    }
+    .header-2{
+        display: block;
+    }
+    .sub-list{
+        display: block;
+    }
+    .logo-2{
+        display: block;
+    }
+    .bottom{
+        flex-direction: column;
+        padding: 15px;
+    }
+    .team-1{
+        margin: 0;
+        
+    }
+    .team-2{
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+        
+    }
+    
+}
+
+
