@@ -354,12 +354,13 @@ p{
     display: none;
 }
 .logo-2{
-    /* margin: 15px; */
+    width: 100%;
     cursor: pointer; 
     display: none;
 }
 .icon-2{
     font-size: 30px;
+    width: 45%;
 }
 .mobile-Menu{
     width: 100%;
@@ -367,6 +368,12 @@ p{
 }
 .mobile-Menu.show{
     display: block;
+}
+.logo-2 img{
+    width: 50%;
+    margin: auto;
+    width: 80px;
+    height: 20px;
 }
 @media (max-width:600px) {
     .container{
