@@ -245,8 +245,8 @@ img{
 }
 .menu{
     display: flex;
-    margin: 15px 15px 15px 60px;
-    width: 70%;
+    margin: 17.5px ;
+    width: 80%;
 }
 .menu-list{
     background-color: rgb(130, 131, 134);
@@ -256,21 +256,7 @@ img{
     padding: 5px;
     
 }
-.login{
-    background-color: rgb(130, 131, 134);
-    height: 20px;
-    width: 20%;
-    text-align: center;
-    margin: 20px 15px 20px 50px;
-    align-items: center;
-    justify-content: center;
-   
-} 
-p{
-    
-    width: 50%;
-    cursor: pointer;
-}
+
 /* menu mobile */
 .header{
     /* background-color: rgb(114, 124, 103); */
@@ -352,6 +338,19 @@ p{
     width: 100%;
     padding: 15px;
     display: none;
+}
+.login{
+    background-color: rgb(130, 131, 134);
+    height: 25px;
+    padding: 5px;
+    width: 15%;
+    margin: 17.5px 15px 20px 50px;
+   
+} 
+p{
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
 }
 .logo-2{
     width: 100%;
