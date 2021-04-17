@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Khóa học</title>
+    <link rel="shortcut icon" type="image/png" href="https://techmaster.vn/resources/image/favicon.ico" />
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid header">
+            <div class="box-white"></div>
+            <a class="navbar-brand" href="#">
+                <img src="https://techmaster.vn/resources/image/new_logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PHÒNG LAB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TRỰC TUYẾN</a>
+                        <div class="gachChan" style="border-bottom: 5px solid white; margin-top: 10px;"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">KHAI GIẢNG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            CHÚNG TÔI
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Trung tâm</a></li>
+                            <li><a class="dropdown-item" href="#">Quy định trung</a></li>
+                            <li><a class="dropdown-item" href="#">Giảng viên</a></li>
+                            <li><a class="dropdown-item" href="#">Hướng dẫn đăng kí học</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="body-part">
+        <div class="container body-content">
+            <div class="row">
+                <div class="col-md-12 col-xl-2">
+                    <div class="sticky">
+                        <div class="filter-field">
+                            <p class="subjectTitle">Đối tượng người học</p>
+                            <div class="md-radio">
+                                <input type="radio" id="Doanh nghiệp" name="Đối tượng người học">
+                                <label for="Doanh nghiệp" class="subjectTitleLabel">Doanh nghiệp</label>
+                            </div>
+                            <div class="md-radio">
+                                <input type="radio" id="Lớp tối" name="Đối tượng người học">
+                                <label for="Lớp tối" class="subjectTitleLabel">Lớp tối</label>
+                            </div>
+                            <div class="md-radio">
+                                <input type="radio" id="Thiếu Nhi" name="Đối tượng người học">
+                                <label for="Thiếu Nhi" class="subjectTitleLabel">Thiếu Nhi</label>
+                            </div>
+                            <div class="md-radio">
+                                <input type="radio" id="Học từ đầu" name="Đối tượng người học">
+                                <label for="Học từ đầu" class="subjectTitleLabel">Học từ đầu</label>
+                            </div>
+                        </div>
+
+                        <div class="filter-field">
+                            <p class="subjectTitle">Chủ Đề</p>
+                            <div class="md-radio">
+                                <input type="radio" id="Web frontend" name="Đối tượng người học">
+                                <label for="Web frontend" class="subjectTitleLabel">Web frontend</label>
+                            </div>
+                            <div class="md-radio">
+                                <input type="radio" id="Lớp tối" name="Đối tượng người học">
+                                <label for="Lớp tối" class="subjectTitleLabel">Di động</label>
+                            </div>
+                            <div class="md-radio">
+                                <input type="radio" id="Thiếu Nhi" name="Đối tượng người học">
+                                <label for="Thiếu Nhi" class="subjectTitleLabel">Web backend</label>
+                            </div>
+                            <div class="md-radio">
+                                <input type="radio" id="Học từ đầu" name="Đối tượng người học">
+                                <label for="Học từ đầu" class="subjectTitleLabel">Big Data,AI</label>
+                            </div>
+                            <div class="md-radio">
+                                <input type="radio" id="Học từ đầu" name="Đối tượng người học">
+                                <label for="Học từ đầu" class="subjectTitleLabel">Kiểm thử</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xl-10 padding-3rem">
+                    <div class="list-search">
+                        <div class="a"></div>
+                        <div class="a"></div>
+                        <div class="search-course">
+                            <input type="text" placeholder="Tìm kiếm khóa học" id="input-search-course"
+                                class="form-control">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="list-courses">
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/fileman/Uploads/web-thumnail.png"
+                                alt="Web cơ bản HTML5, CSS3 và Javascript Online">
+                            <div class="card-body">
+                                <h5 class="card-title">Web cơ bản HTML5, CSS3 và Javascript Online</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>4.6
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">400.000đ</span>
+                                <span class="old-price">500.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/static/10194/bv7f8ms51coduae6ij60"
+                                alt="Javascript căn bản - Tổng hợp 12 game huyền thoại">
+                            <div class="card-body">
+                                <h5 class="card-title">Javascript căn bản - Tổng hợp 12 game huyền thoại</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>4.5
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">400.000đ</span>
+                                <span class="old-price">500.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/static/9479/c18735c51cochrklno30"
+                                alt=" Lập trình Nodejs (cập nhật 2021)">
+                            <div class="card-body">
+                                <h5 class="card-title"> Lập trình Nodejs (cập nhật 2021)</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>4.6
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">300.000đ</span>
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/static/bub3enc51co7s932dsk0/c105hnk51coag9451ev0"
+                                alt="Lập trình di động đa nền tảng React Native Online (cập nhật 2021)">
+                            <div class="card-body">
+                                <h5 class="card-title">Lập trình di động đa nền tảng React Native Online (cập nhật 2021)
+                                </h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>5
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">480.000đ</span>
+                                <span class="old-price">600.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/static/6734/bscggh451cob9t3q7meg"
+                                alt="Khoá học Lập trình đa nền tảng với Flutter">
+                            <div class="card-body">
+                                <h5 class="card-title">Khoá học Lập trình đa nền tảng với Flutter</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>3.4
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">480.000đ</span>
+                                <span class="old-price">600.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/static/8028/bqa348s51cocm3n1ubq0"
+                                alt="Lập trình di động IOS Swift online">
+                            <div class="card-body">
+                                <h5 class="card-title">Lập trình di động IOS Swift online</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>4.5
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">400.000đ</span>
+                                <span class="old-price">500.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/static/6734/bvught451cobimh85mng"
+                                alt="Lập trình Golang căn bản">
+                            <div class="card-body">
+                                <h5 class="card-title">Lập trình Golang căn bản</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>4.3
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">160.000đ</span>
+                                <span class="old-price">200.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/static/8028/bqa38fk51cocm3n1ubqg"
+                                alt="Học Angular 8+ qua ví dụ thực tế">
+                            <div class="card-body">
+                                <h5 class="card-title">Lập trình di động IOS Swift online</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>4
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">400.000đ</span>
+                                <span class="old-price">500.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/static/6734/bo5caps51coco9d0vu80"
+                                alt="Khóa học SQL nâng cao">
+                            <div class="card-body">
+                                <h5 class="card-title">Khóa học SQL nâng cao</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>4
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">320.000đ</span>
+                                <span class="old-price">400.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/fileman/Uploads/Java/banner-javabasic.png"
+                                alt="Học lập trình Java trực tuyến">
+                            <div class="card-body">
+                                <h5 class="card-title">Học lập trình Java trực tuyến</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>4
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">400.000đ</span>
+                                <span class="old-price">500.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/static/8028/bpfneoc51co8tcg6lek0"
+                                alt="Lập trình web với Spring Boot online">
+                            <div class="card-body">
+                                <h5 class="card-title">Lập trình web với Spring Boot online</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>4
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">400.000đ</span>
+                                <span class="old-price">500.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/static/6734/blnou5k51coaro0uga1g"
+                                alt="SQL cho người mới bắt đầu">
+                            <div class="card-body">
+                                <h5 class="card-title">SQL cho người mới bắt đầu</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>4
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">160.000đ</span>
+                                <span class="old-price">200.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/static/36/bo0o9gk51co68hgkdf8g"
+                                alt="Git căn bản đến nâng cao">
+                            <div class="card-body">
+                                <h5 class="card-title">Git căn bản đến nâng cao</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>5
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">160.000đ</span>
+                                <span class="old-price">200.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/fileman/Uploads/logo/Linux.jpg" alt="Làm chủ Linux">
+                            <div class="card-body">
+                                <h5 class="card-title">Làm chủ Linux</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>3.8
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">400.000đ</span>
+                                <span class="old-price">500.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/fileman/Uploads/users/5463/giaithuat-thumnail.png"
+                                alt="Nhập môn lập trình - giải thuật cơ bản">
+                            <div class="card-body">
+                                <h5 class="card-title">Nhập môn lập trình - giải thuật cơ bản</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>4.7
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">400.000đ</span>
+                                <span class="old-price">500.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/fileman/Uploads/MachineLearning/MachineLearning.jpg"
+                                alt="Nhập môn Machine learning">
+                            <div class="card-body">
+                                <h5 class="card-title">Nhập môn Machine learning</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>4.2
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">400.000đ</span>
+                                <span class="old-price">500.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/fileman/Uploads/Docker/docker-cover.jpg"
+                                alt="Docker qua ví dụ thực tế">
+                            <div class="card-body">
+                                <h5 class="card-title">Docker qua ví dụ thực tế</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>4.8
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">400.000đ</span>
+                                <span class="old-price">500.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://techmaster.vn/media/static/8028/bqeg1qs51co5pe1n46j0"
+                                alt="PYTHON cơ bản cho nghề PHÂN TÍCH DỮ LIỆU">
+                            <div class="card-body">
+                                <h5 class="card-title">PYTHON cơ bản cho nghề PHÂN TÍCH DỮ LIỆU</h5>
+                                <p class="course-description"><span>Trực tuyến</span>
+                                    <span>4.7
+                                        <i class="fas fa-star" style="color: rgb(255, 214, 0);"></i></span>
+                                </p>
+                            </div>
+                            <div class="course-price">
+                                <span class="new-price">400.000đ</span>
+                                <span class="old-price">500.000đ</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: #464646;" class="container-fluid" id="footer">
+        <div class="container footer">
+            <footer>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <ul class="footer-info list-unstyled nav-list">
+                            <h4>Chủ sở hữu website</h4>
+                            <li>
+                                <a href="#" target="_blank"> Công ty TNHH TechMaster Vietnam Ltd </a>
+
+                            </li>
+                            <li>
+
+                                <span> Số ĐKDN: 0105392153 </span>
+                            </li>
+
+                            <li>
+                                <span> Ngày cấp: 4-7-2011 </span>
+                            </li>
+                            <li>
+                                <span> Nơi cấp: Sở kế hoạch - đầu tư Hà nội </span>
+                            </li>
+                            <li>
+                                <span> Người đại diện pháp luật: Lê Minh Thu </span>
+                            </li>
+                            <li>
+                                <span> Phụ trách nội dung: Trịnh Minh Cường </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <ul class="footer-info list-unstyled nav-list">
+                            <h4>Giới thiệu</h4>
+                            <li>
+                                <a href="#" target="_blank">Học viện CNTT Techmaster </a>
+
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">Giảng viên</a>
+                            </li>
+
+                            <li>
+                                <a href="#" target="_blank">Quy định </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">Hướng dẫn mua khóa học </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">Ưu đãi và hoàn trả học phí</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">Bảo vệ thông tin khách hàng </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <ul class="footer-info list-unstyled nav-list">
+                            <h4>Tư vấn tuyển sinh</h4>
+                            <li>
+                                <span> Tư vấn viên : </span>
+                            </li>
+
+                            <li>
+                                <a href="#" target="_blank">1. Nguyễn Thanh Hương - 0382416368 </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">huong@techmaster.vn </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">2. Phạm Thị Mẫn - 0963023185 </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">manpham@techmaster.vn</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">Tư vấn đào tạo doanh nghiệp: 090 220 9011</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">cuong@techmaster.vn</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3"><a href="mailto:cuong@techmaster.vn" target="_blank">
+                        </a>
+                        <ul class="footer-info list-unstyled nav-list"><a href="mailto:cuong@techmaster.vn"
+                                target="_blank">
+                                <h4>Địa chỉ</h4>
+                            </a>
+                            <li><a href="mailto:cuong@techmaster.vn" target="_blank">
+                                </a><a
+                                    href="https://www.google.com/maps/place/48+T%E1%BB%91+H%E1%BB%AFu,+Trung+V%C4%83n,+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.998034,105.7924504,17z/data=!3m1!4b1!4m5!3m4!1s0x3135acba8ad197a5:0xa55e51322131e722!8m2!3d20.998029!4d105.7946391"
+                                    target="_blank"> Cơ sở Tố Hữu: Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê
+                                    Văn Lương kéo dài, Hà Nội </a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/maps/place/48+T%E1%BB%91+H%E1%BB%AFu,+Trung+V%C4%83n,+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.998034,105.7924504,17z/data=!3m1!4b1!4m5!3m4!1s0x3135acba8ad197a5:0xa55e51322131e722!8m2!3d20.998029!4d105.7946391"
+                                    target="_blank"> Cơ sở Nguyễn Đình Chiểu: 14 ngõ 4, Nguyễn Đình Chiểu, Quận Hai Bà
+                                    Trưng, Hà Nội </a>
+                            </li>
+                            <ul class="desktop list-inline social-links" style="margin-top: 10px;">
+                                <li><a class="facebook" href="https://www.facebook.com/techmastervn/?fref=ts"
+                                        target="_blank"><i class="fab fa-facebook-square fa-2x"></i>
+                                    </a></li>
+                                <li><a class="youtube" href="https://www.youtube.com/user/TechMasterVN"
+                                        target="_blank"><i class="fab fa-youtube-square fa-2x"></i>
+                                    </a></li>
+                                <li><a class="github" href="https://github.com/arrowjs" target="_blank"><i
+                                            class="fab fa-github-square fa-2x"></i>
+                                    </a></li>
+                            </ul>
+
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+     -->
+</body>
+
+</html>

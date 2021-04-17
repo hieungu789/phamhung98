@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+}
+img{
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.header{
+    height: 60px;
+    background-color: #34465C;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+}
+.navbar{
+    border: none!important;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: space-between!important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color:white
+} .navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color:#9F8277;
+}
+.nav-link{
+    margin-top: 10px;
+}
+
+.dropdown-menu{
+   margin-left: -80px;
+    text-align: center;
+}
+.dropdown-menu li:hover {
+    background-color: #c4c4c4;
+    color: #fff!important;
+}
+
+/* body */
+.md-radio label{
+    font-size: 1.1rem;
+    padding: 0px 0px 0px 10px;
+    color: #464646;
+}
+.md-radio {
+    margin-bottom: 1rem;
+}
+.subjectTitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.filter-field:not(:last-child) {
+    border-bottom: .5px solid #c4c4c4;
+}
+.filter-field:not(:first-child) {
+    padding-top: 1.5rem;
+}
+.md-radio input{
+    width: 20px;
+    height: 15px;  
+}
+.container{
+    max-width: 1250px;
+}
+.body-content{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.search-course {
+    width: 100%;
+    position: relative;
+}
+.list-search {
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem 2rem;
+}
+#input-search-course {
+    color: #5e5e5e;
+    width: 100%;
+    padding: 6px 40px 6px 12px;
+}
+.search-course input {
+    outline: 0!important;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
+    -webkit-box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
+}
+.search-course .fa-search {
+    color: #c4c4c4;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+.sticky{
+    position: sticky;
+    top: 20px;
+}
+.list-courses {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem 2rem;
+}
+.course-description {
+    font-weight: lighter;
+    color: #757575;
+    width: 100%;
+    font-size: .9rem;
+    display: flex;
+    justify-content: space-between;
+}
+.course-price {
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+.new-price{
+    color: #F65623;
+}
+.old-price {
+    font-size: 1.2rem;
+    color: #757575;
+    text-decoration: line-through;
+}
+.card img{
+    height: 100%;
+}
+/* footer */
+footer {
+    padding: 3rem 0 3rem 0;
+    line-height: 2.5em;
+}
+.footer{
+    font-size: 14px;
+}
+.footer h4{
+    color: white;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    font-size: 1.2rem!important;
+}
+.footer a{
+    text-decoration: none;
+}
+a,li{
+    color:#919294;
+}
+.desktop.social-links {
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+}
+.desktop.social-links li {
+    margin-left: 1rem;
+    margin-right: .5rem;
+    font-size: 1rem;
+}
+@media (max-width:1200px) {
+    .sticky{
+        display: none;
+    }
+}
+@media (max-width:767px) {
+    .list-courses {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .list-search{
+        grid-template-columns: repeat(1,1fr);
+    }  
+    .a{
+        display: none;
+    }
+}
+@media (max-width:575px) {   
+    .list-courses {
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* footer */
+    .footer{
+        text-align: center;
+    }
+    .desktop.social-links li{
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+}
+@media (max-width:1366px) {
+    .navbar-brand img{
+        width: 100px;
+    }
+    .navbar-nav a{
+        font-size: .9rem!important;
+        }
+}
+@media (max-width:976px) {
+    .navbar-nav{
+        margin-top: 20px;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        color: black;
+        padding-left: 10px;
+    }
+    .nav-item{
+        background-color: oldlace;
+        z-index: 1000;
+        box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+        width: 100%;
+        
+    }
+    .dropdown-menu {
+        width: 100%;
+        margin:auto;
+    }
+    .dropdown-item{
+        background-color: oldlace;
+        margin-top: 0;
+    }
+    .gachChan{
+        display: none;
+    }
+    .box-white{
+        width: 50px;
+        height: 50px;
+    }
+
+}
