@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: Poppins;
+  }
+  .container {
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  header.container {
+    background-image: url(../day25/img/background\ -\ Copy.jpg);
+    background-repeat: no-repeat;
+    padding-top: 40px;
+  }
+  .bg-light {
+    background-color: #FFD200!important;
+ }
+ .navbar-collapse {
+     flex-grow: 0;
+ }
+  nav {
+      
+    height: 44px;
+    text-align: center;
+  }
+  .navbar{
+      padding: 0;
+      height: 44px;
+  }
+  .menu{
+      height: 44px;
+      padding-left: 55px;
+      padding-right: 55px;
+    background-color: #FFD200;
+  }
+  .login{
+      background-color: #DEFF06;
+      width: 110px;
+  }
+  .hero-main-content {
+    max-width: 680px;
+    margin: auto;
+    margin-top: 128px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+}
+  .navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 30px;
+}
+  .hero-title,
+  .hero-description {
+    font-family: Poppins, Arial, sans-serif; /* Cáº§n nhÃºng font vÃ o */
+    font-style: normal;
+    line-height: 1.5;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .hero-title {
+    font-weight: 600;
+    font-size: 54px;
+    letter-spacing: 1.12px;
+    text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.151183);
+  }
+  
+  .hero-description {
+    margin: 0;
+    padding: 0 30px;
+    font-weight: 500;
+    font-size: 20px;
+    mix-blend-mode: normal;
+    opacity: 0.91;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.0910043);
+  }
+  
+  .hero-form {
+    text-align: center;
+    margin-top: 16px;
+
+  }
+  .hero-form .input{
+      height: 40px;
+      padding: 15px;
+      width: 150px;
+  }
+  .hero-form .first{
+      width: 290px;
+  }
+  .hero-form .button{
+    height: 40px;
+    background-color: #DEFF06;
+    width: 150px;
+  }
+  .hero-image {
+    margin-top: 50px;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+  
+
+  .sectionTwo{
+      /* width: 90%; */
+      margin-top: 41px;
+      /* margin: auto; */
+      text-align: center;
+  }
+  .title{
+      margin: auto;
+      width: 50%; 
+  }
+  .title h2{
+    font-family: Poppins;
+      margin-bottom: 14px;
+      font-size: 28px;
+      line-height: 45px;
+      font-weight: 700;
+  }
+  .title p{
+    font-family: Poppins;
+      font-size: 20px;
+      opacity: 0.45;
+  }
+  .group-6{
+    margin-top:62px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem 2rem;
+    margin-left: 85px;
+    margin-right: 78px;
+
+  }
+  .card{
+      border: none;
+  }
+  .card img{
+      background-color: rgb(214, 206, 206);
+  }
+  .price{
+    position:absolute;
+    right: -2.19%;
+    top: 5px;
+    bottom: 18.18%;
+  }
+  .price img{
+      width: 65px;
+      height: 30px;
+      top: 10px;
+  }
+  .price-img{
+      position:absolute;
+      right: -2.19%;
+      top:27px;
+  }
+  .text{
+    position:absolute;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    right: 5%;
+    bottom: 19px;
+    right: 3px;
+  }
+  .price-img p{
+      margin-top: 0;
+      margin-bottom: 0;
+
+  }
+  .button-m{
+    width: 18%;
+    margin: auto;
+  }
+
+ .button-m p{
+    background-color: #F5A623;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 48px;
+    color: white;
+ }
+ .button-m p:hover{
+    background-color: rgb(241, 173, 82);
+}
+ .sectionOne{
+     text-align: center;
+     margin-top: 84px;
+ }
+.middle {
+    width: 85%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1rem 1.5rem;
+    padding-top: 51px;
+}
+.middle img{
+
+    max-width: 100%;
+}
+.vacxin{
+    text-align: center;
+}
+.word{
+    margin-top: -35px;
+    color: white;
+    font-size: 20px;
+    
+}
+footer.bottom {
+    background-image: url(../day25/img/bai6.png);
+    background-repeat: no-repeat;
+}
+.bottom{
+      max-width: 1440;
+      height: 348px;
+      margin: auto;
+}
+.hero-bot-content{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top:70px ;
+    color: white 
+}
+.hero-title-1{
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 60px;
+}
+.hero-description-1{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 11px;
+}
+.hero-form-1{
+    margin-top: 39px;
+    height: 55px;
+}
+.menu-1{
+    background-color: #342C2C;
+}
+@media (max-width: 1100px) {
+    .hero-bot-content{
+        width: 100%;
+    }
+    .button-1{
+        width: 30%;
+        margin-top: 5px;
+    }
+}
+@media (max-width: 950px) {
+    .group-6{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .hero-bot-content{
+        width: 100%;
+    }
+    .button-1{
+        width: 30%;
+        margin-top: 5px;
+    }
+}
+@media (max-width: 768px) {
+    .hero-title {
+      font-size: 40px;
+    }
+    .hero-description {
+      font-size: 18px;
+    }
+    .middle{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .button-m  {
+        width: 100%;
+    }
+    .button-m p{
+        width: 50%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .group-6{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .hero-bot-content{
+        width: 100%;
+    }
+    .button-1{
+        width: 30%;
+        margin-top: 5px;
+    }
+  }
+  @media (max-width: 575px) {
+    .hero-title {
+      font-size: 26px;
+    }
+    .hero-description {
+      font-size: 16px;
+    }
+    .hero-form .button{
+        margin-top: 5px;
+        width: 200px;
+    }
+    .navbar-collapse{
+        background-color: rgb(253, 94, 2);
+        z-index: 1000;
+        border-radius: 5px;
+    }
+    .login{
+        width: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .hero-bot-content{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .button-1{
+        width: 30%;
+        margin-top: 5px;
+    }
+    .group-6{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+   
+  }
