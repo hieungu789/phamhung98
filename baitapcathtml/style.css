@@ -242,11 +242,16 @@ a{
     letter-spacing: 0.777778px;
     color: #525252;
     margin-right: 11px;
-
+    padding: 5px 10px;
+}
+.menu-list{
+    width: 70%;
+    margin: auto;
 }
 .pagination{
     justify-content: center;
-    margin-top: 73px;
+    width: 100%;
+    
 }
 .page-item.active .page-link {
     z-index: 3;
@@ -421,7 +426,14 @@ footer{
         flex-direction: column;
     }
 }
-
+@media (max-width:390px){
+    .section-One{
+        width: 69.8%;
+    }
+    .pagination{
+       display: none;
+    }
+}
 
 /* hover */
 
