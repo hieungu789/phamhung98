@@ -1,0 +1,441 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* header */
+#container{
+    max-width: 1440px;
+    margin: auto;
+    background-color:#fff;
+}
+
+img{
+    max-width: 100%;
+}
+.box-header{
+    width: 72.5%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 0.6%;
+}
+
+.menu{
+    border-top: 1px solid #E4E4E4;
+    margin: auto;
+    background-color: #fff;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav-link{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 2.1px;
+    color: #525252!important;
+}
+.nav-item{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.bg-light {
+    background-color: #fff!important;
+}
+.navbar>.container-fluid{
+    justify-content: center;
+}
+.navbar-collapse {
+   flex-grow: 0;
+}
+.second-header{
+    width: 71%;
+    margin: auto;
+}
+.name-blog{
+    position: absolute;
+    z-index: 1000;
+    top:7%
+}
+p{
+    
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 26px;
+}
+.carousel-item img{
+    max-width: 100%;
+    max-height: 660px;
+}
+.box-title{
+    padding-top:17px;
+    position: absolute;
+    z-index: 1000;
+    top: 72%;
+    /* right: 50px; */
+    left: 17%;
+    background-color: white;
+    text-align: center;
+    width: 68%;
+    max-width: 100%;
+}
+.button{
+    margin: auto;
+    background-color: #E79E5A;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding: 5px 13px;
+}
+.great-title{
+    margin: auto;
+    margin-top: 11px;
+    width: 59%;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #222222!important;
+}
+.navbar-light .navbar-toggler {
+    color: white;
+    border: none;
+}
+.navbar-toggler-icon{
+    width: 2.5rem;
+}
+/* ============================= */
+/* class chung */
+button{
+    border: none;
+}
+.great-title, .last, .word, .button-header,  .box-footer p{
+    font-family: Gilda Display;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+.nav-link, p , .button, .button-1 {
+    font-family: Montserrat;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    margin-left: 5px;
+}
+.button-1, .great-title-1{
+    margin-left: 20px;
+}
+/* main */
+/* section-One */
+.section-One{
+    width: 70.5%;
+    margin: auto;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-gap:20px;
+    margin-top: 39px;
+}
+.box-img-1 img{
+    box-shadow: 0px 0px 2px 2px #999999;
+}
+.box-title-1{
+    position: absolute;
+    z-index: 1000;
+    margin-top: -87px;
+    width: 20%;
+}
+.button-1{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    background-color: #F3AE76;
+    /* identical to box height */ 
+    text-align: center;  
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+.great-title-1{
+    margin-top: 9px;
+    font-family: Gilda Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+/* section-two */
+.button-header  {
+    padding: 8px 27px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: #E79E5A;
+    margin-top:67px ;
+}
+.section-Two{
+    margin: auto;
+    width: 70.5%;
+    text-align: center;
+}
+.box-card{
+    margin-top: 47px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:18px
+}
+.button-img{
+    margin-top: 6px;
+}
+.title-1{
+    font-family: Gilda Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 24px;
+    /* or 240% */
+    text-align: center;
+    color: #A6A6A6;
+    margin-top: 8px;
+    margin-bottom: 0%;
+}
+.far{
+    padding-left: 15px;
+}
+.card-text{
+    margin-top: 0;
+    font-family: Gilda Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 32px;
+/* or 145% */
+    text-align: center;
+    color: #525252;
+}
+.page-link{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.777778px;
+    color: #525252;
+    margin-right: 11px;
+
+}
+.pagination{
+    justify-content: center;
+    margin-top: 73px;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #F7AF6C;
+    border-color: #b9b9b9;
+}
+/* section-Three */
+.section-Three{
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.gallery{
+    width: 69.5%;
+    margin: auto;
+    margin-top: 47px;
+}
+.gallery ul{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:7.67px;
+    padding: 0;
+    margin-left: 0;
+}
+/* footer */
+.row{
+    background-color: #575757;
+    padding-top:75px;
+    margin-top: 119px;
+    width: 71%;
+    margin: auto;
+}
+footer{
+    max-width: 1440px;
+    background-color: #575757;
+    margin-top: 113px;
+}
+.word{
+    font-size: 14px;
+    line-height: 26px;
+    padding-left: 0;
+}
+.search input{
+    width: 76%;
+    border: 1px solid #CDCDCD;
+    background-color: #575757;
+    padding: 5px 10px;
+}
+.search button{
+    position: absolute;
+    padding: 5px;
+    width: 5%;
+    border: 1px solid #CDCDCD;
+    background-color: #575757;
+}
+.box-footer{
+    display: flex;
+    margin-bottom: 14px;
+    width: 100%;
+}
+.box-footer p{
+    margin-left: 11px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 0;
+    padding: 0;
+}
+.bot{
+    border: 1px solid #787878;
+    width: 50%;
+    margin: auto;
+    margin-top: 61px;
+}
+.last{
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 38px;
+    padding-bottom: 64px;
+}
+/* responsive */
+@media (max-width:986px) {
+    .word{
+        padding-bottom: 20px;
+    }
+    .box-footer{
+        margin-top: 15px;
+    }
+    .search button{
+        width: 15%;
+    }
+    .gallery ul{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:7.67px;
+    }
+    .name-blog{
+        display: none;
+    }
+    .navbar>.container-fluid{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 6.5%;
+    }
+    .navbar-nav{
+        background-color: #8fa197;
+        width: 89%;
+        margin-left: 2%;
+    }
+}
+@media (max-width:787px){
+    .box-title{
+        display: none;
+    }
+}
+@media (max-width:783px){
+    .raduse{
+        display: none;
+    }
+}
+@media (max-width:800px){
+    .box-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 18px;
+    }
+    .section-One{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    
+    }
+
+}
+
+@media (max-width:700px) {
+    .gallery ul{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:7.67px;
+    }
+    .box-card{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 18px;
+       
+    }
+    .section-One{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .box-title-1{
+        width: 60%;
+        left: 20%;
+        text-align: left;
+    }
+    
+}
+@media (max-width:550px) {
+    .icon{
+        margin-left: 5%;
+        margin-top: 15px;
+    }
+    .box-header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+
+/* hover */
+
+.section-Three button:hover{
+  background-color: #fcc28d;
+}
+.button-header:hover{
+    background-color: #fcc28d;
+}
+.button-1:hover{
+    background-color: #fcc28d;
+}
+.button:hover{
+    background-color: #fcc28d;
+}
+.gallery ul li img:hover{
+   box-shadow: 1px 1px 2px black, 0 0 25px  #F3AE76, 0 0 5px  #F3AE76;
+   opacity: 0.6;
+   cursor: pointer;
+}
+.navbar-nav a:hover{
+    background-color:#a08974 ;
+}
+.card img:hover{
+    cursor: pointer;
+}
