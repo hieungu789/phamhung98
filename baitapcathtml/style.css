@@ -463,6 +463,7 @@ footer{
    box-shadow: 1px 1px 2px black, 0 0 25px  #F3AE76, 0 0 5px  #F3AE76;
    opacity: 0.6;
    cursor: pointer;
+   transition: 0.5s;
 }
 .navbar-nav a:hover{
     background-color:#F7AF6C ;
