@@ -311,6 +311,10 @@ footer{
     border: 1px solid #CDCDCD;
     background-color: #575757;
 }
+.fa-envelope{
+    padding: 0;
+    color: #fff;
+}
 .box-footer{
     display: flex;
     margin-bottom: 14px;
@@ -336,6 +340,10 @@ footer{
     margin-top: 38px;
     padding-bottom: 64px;
 }
+::placeholder { 
+    color: rgb(255, 231, 231);
+    opacity: 1;
+  }
 /* responsive */
 @media (max-width:986px) {
     .word{
