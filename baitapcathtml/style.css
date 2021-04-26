@@ -440,8 +440,8 @@ footer{
     .section-One{
         width: 69.8%;
     }
-    .pagination{
-       display: none;
+    .gtx{
+        display: none;
     }
     .button-header{
         width: 70%;
