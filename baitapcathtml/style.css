@@ -446,6 +446,9 @@ footer{
     .button-header{
         width: 70%;
     }
+    .button-header{
+    letter-spacing: 0;
+    }
 }
 
 /* hover */
@@ -466,7 +469,7 @@ footer{
    transition: 0.5s;
 }
 .navbar-nav a:hover{
-    background-color:#F7AF6C ;
+    color: #F7AF6C!important;
 }
 .card img:hover{
     cursor: pointer;
