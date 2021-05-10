@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    width: 80%;
+    margin: auto;
+}
+/* popovers */
+.btn{
+    margin: 80px 60px 0 60px;
+}
+.hover-hienthi-top{
+    background-color: rgb(250, 0, 0);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgb(238, 93, 93);
+    max-width: 100px;
+    position: absolute;
+    top:2.8%;
+    margin-left: 0.5%;
+    display: none;
+}
+.hover-hienthi-left{
+    background-color: rgb(250, 0, 0);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgb(238, 93, 93);
+    max-width: 100px;
+    position: absolute;
+    top:10.5%;
+    left: 25%;
+    display: none;
+}
+.hover-hienthi-right{
+    background-color: rgb(250, 0, 0);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgb(238, 93, 93);
+    max-width: 100px;
+    position: absolute;
+    top:10.7%;
+    left: 64%;
+    display: none;
+}
+.hover-hienthi-bottom{
+    background-color: rgb(250, 0, 0);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgb(238, 93, 93);
+    max-width: 100px;
+    position: absolute;
+    top:19%;
+    margin-left: 1.5%;
+    display: none;
+}
+/*  */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, .4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* accordion */
+  #wapper{
+      max-width: 600px;
+      margin: 0px auto;
+  }
+  h1{
+      text-align: center;
+      margin-bottom: 30px;
+  }
+  .accordion-header{
+    background:#e4e4e4;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .accordion-body{
+    padding: 10px 10px;
+    display: none;
+  }
+  .accordion-item.active .accordion-header{
+      background: #0c81bb;
+      color: #fff;
+
+  }
+  .fa-angle-down{
+      transition: all 0.3s;
+  }
+  .accordion-item.active .fa-angle-down{
+      transform: rotate(180deg);
+  }
