@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Progress</title>
+</head>
+
+<body>
+    <div class="progress">
+        <div class="progress-done">
+            1%
+        </div>
+        <div id="button">
+            <button class="button start">Start</button>
+            <button class="button pause" disabled>Pause</button>
+            <button class="button restart "disabled>Restart</button>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let time = 100;
+        let interval;
+        let isPause = false;
+        $('.start').click(function () {
+            interval = setInterval(countDown, 1000);
+            $('.pause').prop("disabled",false);
+            $('.restart').prop("disabled",false);
+            $('.start').prop("disabled",true);
+        });
+
+        $('.pause').click(function () {
+            if (!isPause) {
+                clearInterval(interval);
+                $('.pause').text("Resume");
+                isPause = true;
+            } else {
+                interval = setInterval(countDown, 1000);
+                $('.pause').text("Pause");
+                isPause = false;
+            }
+            
+        });
+
+        $('.restart').click(function () {
+            clearInterval(interval);
+            time = 100;
+            $('.progress-done').css('width', "1%");
+            $('.progress-done').html("");
+            $('.start').prop("disabled",false);
+            $('.pause').prop("disabled",true);
+            $('.restart').prop("disabled",true);
+        });
+
+        function countDown() {
+            time--;
+            let a = 100 - time + '%';
+            $('.progress-done').css('width', a);
+            $('.progress-done').text(a);
+            if (time == 0) {
+                clearInterval(interval);
+                $('.pause').prop("disabled",true);
+            }
+        }
+    </script>
+</body>
+
+</html>
