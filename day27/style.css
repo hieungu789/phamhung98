@@ -2,30 +2,30 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-body{
+  }
+  body{
     font-family: 'Roboto', sans-serif;
-
-}
-h1{
+  
+  }
+  h1{
     text-align: center;
     margin:15px 0;
-}
-thead{
+  }
+  thead{
     background-color: #333A40;
     color: #fff;
-}
-.fa-plus-circle{
+  }
+  .fa-plus-circle{
     color: rgb(247, 247, 247);
-}
-tr:nth-child(even) {
+  }
+  tr:nth-child(even) {
     background-color: #dddddd;
   }
-.box-item{
+  .box-item{
     width: 80%;
     margin: auto;
-}
-.add-student{
+  }
+  .add-student{
     background-color: #00A751;
     padding: 10px;
     box-shadow: 1px 1px 1px 1px rgb(211, 203, 203);
@@ -33,137 +33,137 @@ tr:nth-child(even) {
     max-width:165px;
     margin: 20px 0px;
     cursor: pointer;
-}
-.add-student span{
+  }
+  .add-student span{
     color: white;
-}
-.add-student:hover{
+  }
+  .add-student:hover{
     background-color:  #00bb5a;
     ;
     transition:ease-in;
-}
-.fix-student {
+  }
+  .fix-student {
     padding: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-.edit span:hover{
+  }
+  .edit span:hover{
     cursor: pointer;
     color: #3ca6af;
-}
-.edit span{
+  }
+  .edit span{
     color: #58C0CA;
-}
-
-.delete{
+  }
+  
+  .delete{
     cursor: pointer;
-}
-.delete:hover{
+  }
+  .delete:hover{
    color: rgb(253, 137, 137);
-}
-.border-a{
+  }
+  .border-a{
     margin-left: 5px;
     margin-right: 5px;
     border: 1px solid rgb(124, 123, 123);
-}
-a{
+  }
+  a{
     text-decoration: none;
-}
-/* class chung */
-.fa-edit,a{
+  }
+  /* class chung */
+  .fa-edit,a{
     color: #01A4B6;
-}
-.fa-trash-alt,span{
+  }
+  .fa-trash-alt,span{
     color: #EA2B48;
-}
-.fa-save,.fa-angle-left{
+  }
+  .fa-save,.fa-angle-left{
     color: #fff;
-}
-/* /////////////////////////////////// */
-@media (max-width:600px) {   
+  }
+  /* /////////////////////////////////// */
+  @media (max-width:600px) {   
     .box-item{
         max-width: 80%;
         margin-left: 0;
     }
     
-}
-/* add học viên */
-.form-add{
+  }
+  /* add học viên */
+  .form-add{
     display: none;
-}
-.form-edit{
+  }
+  .form-edit{
     display: none;
-}
-.show {
+  }
+  .show {
     display: block;
-}
-.hide {
+  }
+  .hide {
     display: none;
-}
-.form-container {
+  }
+  .form-container {
     max-width: 720px;
     padding: 32px;
     margin: 36px auto 0 auto;
     background-color: #fff;
-
-}
-
-.form__row {
+  
+  }
+  
+  .form__row {
     padding: 8px 0;
     display: flex;
-}
-
-.form__label {
+  }
+  
+  .form__label {
     min-width: 90px;
     padding: 5px;
-}
-
-.form__input {
+  }
+  
+  .form__input {
     flex: 1;
     height: 35px;
     padding-left: 10px;
-}
-.button{
+  }
+  .button{
     display: flex;
     justify-content: center;
-}
-.back:hover{
+  }
+  .back:hover{
     background-color: rgb(100, 97, 97);
-}
-.back{
+  }
+  .back{
     padding: 10px;
     margin: 5px;
     background: rgb(104, 104, 104);
     border-radius: 5px;
     cursor: pointer;
     color: #fff;
-}
-
-.save{
+  }
+  
+  .save{
     padding: 10px;
     margin: 5px;
     background: #00A751;
     border-radius: 5px;
     cursor: pointer;
     color: #fff;
-}
-.save-edit{
+  }
+  .save-edit{
     padding: 10px;
     margin: 5px;
     background: #00A751;
     border-radius: 5px;
     cursor: pointer;
     color: #fff;
-}
-.save:hover{
+  }
+  .save:hover{
     background-color: #02af56;
     transition:ease-in;
-}
-.form_item{
+  }
+  .form_item{
     text-align: center;
-}
-.thong-bao{
+  }
+  .thong-bao{
     background-color: rgb(232, 241, 241);
     width: 30%;
     text-align: center;
@@ -174,15 +174,16 @@ a{
     box-shadow: 1px 1px 1px 1px rgb(223, 236, 236);
     border-radius: 5px;
     display: none;
-}
-.thong-baoEdit{
+  }
+  .thong-baoEdit{
     margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
-}
-.thong-baoEdit p{
+  }
+  .thong-baoEdit p{
     cursor: pointer;
-}
-.thong-baoEdit p:hover{
+  }
+  .thong-baoEdit p:hover{
     color: rgb(63, 182, 33);
-}
+  }
+  
