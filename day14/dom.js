@@ -22,7 +22,7 @@ let count = 10;
 function guess() {
     let numberAcheck = document.getElementById("numberCheck").value;
     console.log(random, numberAcheck)
-    if (numberAcheck < 0 || numberAcheck > 100) {
+    if (numberAcheck < 0 || numberAcheck > 100||!Number.isInteger(numberAcheck)) {
         alertMessage.innerHTML = "Vui lòng nhập lại"
         alertMessage.style.color = "red"
     } else {

@@ -19,7 +19,7 @@ function bai1(a, b) {
 // bài2:Chèn phần tử có giá trị X vào phía sau phần tử có giá trị lớn nhất trong mảng.
 function Max(arr) {
     let max = arr[0];
-    let dem = 0;
+    let dem =0;
     for (let i = 1; i < arr.length; i++) {
         if (arr[i] > max) {
             max = arr[i];
@@ -27,7 +27,7 @@ function Max(arr) {
         }
     }
     // console.log(dem);
-    arr.splice(dem + 1, 0, '100')
+    arr.splice(dem+1,0,'100')
     console.log(arr)
     // console.log("Số lớn nhất là", max)
 }
@@ -91,18 +91,15 @@ function giaCuocTaxi() {
         console.log("Số tiền cần trả là:", giaCuoc)
         console.log("Thời gian chờ là 0")
     }
-    if (soKm < 1, b > 1) {
-        giaCuoc = 9000+b*400
-        console.log("Số tiền cần trả là:", giaCuoc)
-        console.log("Thời gian chờ là", b + " Phút")
-    } else if (1 < soKm && soKm && b > 1) {
+    if (1 < soKm && soKm && b > 1) {
         giaCuoc = 400 * b + (soKm * 11000) + 9000
         console.log("Số tiền cần phải trả sau khi chờ:", giaCuoc)
-        console.log("Thời gian chờ là", b + " Phút")
-    } else if (soKm > 30 && b > 1) {
+        console.log("Thời gian chờ là",b +" Phút")
+    }else
+    if (soKm > 30 && b > 1) {
         giaCuoc = 400 * b + (soKm * 11000) + 9000
         console.log("Số tiền cần phải trả sau khi chờ", giaCuoc)
-        console.log("Thời gian chờ là", b + " Phút")
+        console.log("Thời gian chờ là",b+" Phút")
     }
 }
 // 

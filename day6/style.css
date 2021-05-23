@@ -95,6 +95,7 @@ body {
     font-family: Roboto,sans-serif;
     text-transform: uppercase;
     color: #464A4C;
+    line-height: 1.5;
 }
 span::before{
     color: white;

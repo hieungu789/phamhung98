@@ -173,11 +173,6 @@ a,li{
     margin-right: .5rem;
     font-size: 1rem;
 }
-@media (max-width:1200px) {
-    .sticky{
-        display: none;
-    }
-}
 @media (max-width:767px) {
     .list-courses {
         grid-template-columns: repeat(2,1fr);

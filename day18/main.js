@@ -35,3 +35,4 @@ function BMI() {
         }
     }
 }
+document.g

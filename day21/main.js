@@ -96,18 +96,18 @@ function displayNext() {
     //điểm hiển thị
     let scoreElem = displayScore();
     let numWrong = 5 - scoreElem;
-    let warning = '<p id=\'wrong\'\>Bạn sai ' + numWrong + ' wrong ';
+    let warning = '<p id=\'wrong\'\>Bạn sai ' + numWrong + ' câu rồi ';
     if (numWrong == 1) {
       warning += 'question.';
     } else {
-      warning += 'questions.';
+      warning += '';
     }
 
     warning += ' Chơi lại đi!</p>';
     quiz.append(warning);
 
     if (scoreElem == 5) {
-      window.location.href = "congratulation.html";
+      window.location.href = "Chúc mừng";
     }
 
     prev.hide();

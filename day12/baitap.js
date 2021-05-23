@@ -150,20 +150,3 @@ function veTamGiacCanTwo(m) {
     document.write(str)
 }
 veTamGiacCanTwo(5)
-document.write("<br>")
-// aaa
-function printSpecialTriangle(h) {
-    var str = "";
-    for (i = h; i >= 1; i--) {
-      for (j = 2 * h - 1; j >= 1; j--) {
-        if (j >= h - i + 1 && j <= h + i - 1) {
-          str += " *  ";
-        } else {
-          str += " *  ".fontcolor("white");
-        }
-      }
-      str += "<br>";
-    }
-    document.writeln(str);
-  }
-  printSpecialTriangle(5)

@@ -150,7 +150,29 @@ translate("French")
 //         // }
 //     }
 // } 
+// function adjacentElementsProduct(inputArray) {
+//     var c =inputArray[0]*inputArray[1];
+//     var p = c;
+//     for(var i=1;i<inputArray.length;i++){
+//         console.log(c);
+//         var c=inputArray[i]*inputArray[i+1];
+//         if(c > p){
+//             p=c;
+//         };
+//     };
+//     return p;
+// };
+// console.log("minimum product = " + adjacentElementsProduct([2,4,-3,8,2]));
 
+function adjacentElementsProduct(inputArray) {
+    let max = -Infinity;
+    for (let i = 1; i < inputArray.length; i++) {
+        max = Math.max(inputArray[i] * inputArray[i - 1], max);
+    }
+
+    return max;
+}
+console.log("minimum product = " + adjacentElementsProduct([-23, 4, -3, 8, -12]));
 
 
 
