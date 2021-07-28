@@ -1,0 +1,122 @@
+a:hover {
+    color: #fff;
+}
+.sub-menu span:hover {
+    color: #2c55c6;
+}
+.sub-menu a:hover {
+     color: #2c55c6;
+}
+.item span:hover {
+    color: #2C72C6;
+    cursor: pointer;
+}
+.nav-bar_menu_button:hover {
+    background-color: #2C72C6;
+    transition: 0.5s;
+}
+.product-main:hover {
+    background-color: rgba(204, 202, 202, 0.719);
+}
+.product-main:hover .menu-product {
+    transition: 0.3s;
+    transition: color .3s;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+.box-text:hover {
+    background-color: rgba(204, 202, 202, 0.719);
+    cursor: pointer;
+}
+.main-menu_left p:hover {
+    color:#2C72C6;
+    cursor: pointer;
+}
+.menu-product li:hover {
+    background-color: rgba(204, 202, 202, 0.719);
+}
+.fab:hover {
+    color:#2C72C6; 
+    cursor: pointer;
+}
+.list-bottom_left a:hover {
+    color:#dbd0d1;
+}
+a,a:visited,a:hover,a:active{
+    -webkit-backface-visibility:hidden;
+            backface-visibility:hidden;
+    position:relative;
+    transition:0.5s color ease;
+    text-decoration:none;
+  }
+ 
+  a.before:before,a.after:after{
+    content: "";
+    transition:0.5s all ease;
+    -webkit-backface-visibility:hidden;
+            backface-visibility:hidden;
+    position:absolute;
+  }
+  
+  a.after:after{
+    bottom:-0.25em;
+  }
+  a.before:before,a.after:after{
+    height:2px;
+    line-height: 127%;
+    width:0;
+    background:#cfcccd;
+  }
+  a.first:after{
+    left:0;
+  }
+  a.before:hover:before,a.after:hover:after{
+    width:100%;
+  }
+
+
+
+  .stretch-card>.card {
+    width: 100%;
+    min-width: 100%
+}
+
+body {
+    background-color: #f9f9fa
+}
+
+.flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+@media (max-width:991.98px) {
+    .padding {
+        padding: 1.5rem
+    }
+}
+
+@media (max-width:767.98px) {
+    .padding {
+        padding: 1rem
+    }
+}
+
+.padding {
+    padding: 3rem
+}
+
+.button-submit:hover {
+    background-color: #3a96bb;
+}
+.furniture img:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.2s ease;
+}
+
+.mua-ngay:hover {
+    background-color: #ffffff;
+}

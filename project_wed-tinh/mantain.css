@@ -1,0 +1,55 @@
+.nav-bar {
+    background-color: rgb(0 0 0 / 86%);
+}
+body {
+    background-color: #fff;
+}
+.menu-right {
+    background-color: rgb(0 0 0 / 86%);
+}
+.ten-xe {
+    color: #000;
+    top: 20%;
+}
+.thiet-ke {
+    color: #121212;
+}
+.convenient li {
+    font-size: 18px;
+    color: rgb(136, 136, 136);
+}
+.fa-circle {
+    font-size: 8px;
+}
+.fack {
+    margin-left: 15px;
+}
+.big-bnt {
+    display: flex;
+    justify-content: flex-start;
+}
+.big-text {
+    margin: 0 50px 0 0;
+    background-color: #3EB7E8;
+    border-radius: 0%;
+    font-size: 18px;
+    font-family: sans-serif;
+    box-shadow: 1px 1px rgb(165, 165, 165);
+}
+@media (max-width:650px) {
+    .ing-main {
+        margin-top: 80px;
+    }
+    .big-bnt {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .big-text {
+        font-size: 16px;
+        max-width: 100%;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    
+}
