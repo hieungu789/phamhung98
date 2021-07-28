@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="product.css">
@@ -485,7 +486,27 @@
                     </div>
                 </div>
 
-                <span>Đăng kí lái thử</span>
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    <span>Đăng kí lái thử</span>
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                           Cảm ơn bạn đã đăng kí
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
 
@@ -546,7 +567,9 @@
                         </ul>
                     </div>
                 </div>
-
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14901.672027272343!2d105.8172884472016!3d20.97587477447616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acf1a3d19795%3A0xd886e066da66f61!2sMercedes-Benz%20Haxaco%20Kim%20Giang!5e0!3m2!1svi!2s!4v1627494129733!5m2!1svi!2s"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div style="border-top:1px solid gray;width:86%;margin:auto;"></div>
             <div class="list-bottom">

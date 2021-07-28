@@ -83,7 +83,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(37 37 37 / 20%);
+    background-color: rgb(37 37 37 / 50%);
 }
 .nav-bar.scroll{
     background-color: #fff;
@@ -95,6 +95,9 @@ body {
 .nav-bar.scroll .nav-bar_menu_button span
 {
     color: rgb(63, 63, 63);
+}
+.nav-bar.scroll .button-text a {
+    color: #fff;
 }
 .nav-bar.scroll .menu-right li a{
     color: #fff;
@@ -199,10 +202,10 @@ body {
 }
 .nav-item .line {
   position: absolute;
-  width: 96px;
+  width: 0;
+  left: 0;
   height: 3px;
   top:45px;
-  left: 112px;
   border-radius: 15px;
   background-color: #2C72C6;
   transition: all 0.2s ease;
@@ -250,7 +253,6 @@ body {
 }
 .card a {
     color: rgb(16, 141, 212)!important;
-    text-decoration: underline;
 }
 .card-tilte {
     color: #000;
@@ -258,6 +260,7 @@ body {
 }
 .card-body {
     border-bottom: 1px solid rgb(99, 99, 99);
+    padding: 0 1rem!important;
 }
 .card-text {
     margin-top: 15px;
@@ -354,7 +357,7 @@ body {
     width: 24%;
     right: 0;
     padding: 30px;
-    height: calc(100vh - 60px);
+    height: calc(50vh );
     transition: 0.3s ease-in-out;
 }
 
@@ -390,6 +393,7 @@ main h2 {
 .box-title {
     display: flex;
     margin: 30px 0;
+    align-items: center;
 }
 .dropdonw-Menu_Car-title{
     cursor: pointer;
@@ -419,6 +423,11 @@ main h2 {
     box-sizing: border-box;
     z-index: 1111;
     display: none;
+}
+.fa-star {
+    font-size: 12px;
+    color: rgb(0, 183, 255);
+    
 }
 .show {
     display: block;
@@ -504,10 +513,11 @@ main h2 {
 .prices {
     font-size: 18px;
     margin-top: 10px;
-    color: #ACACAC;
+    color: #2a2a2a;
 }
+
 .card-text:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     
 }
 .menu-product {
@@ -537,6 +547,9 @@ main h2 {
     grid-template-columns: repeat(4,1fr);
     grid-gap:30px;
 }
+.card-img-top {
+    padding: 20px;
+}
 .featured-Posts_blog {
     border: 1px solid gray;
     border-bottom:none ;
@@ -557,7 +570,7 @@ main h2 {
     margin: auto;
     padding: 20px 0;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-gap:30px;
 }
 

@@ -118,6 +118,7 @@ body {
         display: none;
     }
 }
+
 .thong-so-a{
     width: 80%;
      margin: auto;
@@ -157,6 +158,9 @@ body {
 @media (max-width:400px) {
     .tinh-nang h3 {
         max-width: 100%;
+    }
+    iframe {
+        display: none;
     }
 }
 .hinh-anh_second {
@@ -207,17 +211,21 @@ body {
 .request_Counselling {
     width: 86%;
     margin: auto;
-    background: #fff;
+    background: #121212;
     text-align: center;
+    color: #fff;
 }
 .request_Counselling h3{
     padding: 25px 0;
+}
+.dropdonw-persistent {
+    max-width: 50%;
 }
 .input {
     display: flex;
     flex-direction: column;
     padding: 5px 0;
-    max-width: 70%;
+    max-width: 50%;
     margin: auto;
 }
 input {
@@ -226,7 +234,7 @@ input {
 }
 .radio_check {
     margin: auto;
-    max-width: 70%;
+    max-width: 50%;
     text-align: left;
     margin-top: 8px;
 }
@@ -251,7 +259,7 @@ label {
     display: flex;
     flex-direction: column;
     padding: 5px 0;
-    max-width: 70%;
+    max-width: 50%;
     margin: auto;
     text-align: left;
     margin-top: 15px;
@@ -261,6 +269,9 @@ label {
     padding: 5px;
     text-align: center;
     background-color: greenyellow;
+}
+.btn-primary {
+    margin-top: 20px;
 }
 .close {
     float: right;
