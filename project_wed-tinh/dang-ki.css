@@ -1,0 +1,62 @@
+.sign-Up_Table {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.information_List {
+    display: flex;
+}
+.registration_Information {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.registration_Information h4 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+.registration_Information span {
+    border: 0.2px solid gray;
+    padding: 10px 30px;
+    max-width: 300px;
+    margin: auto;
+    background-color: #3EB7E8;
+    cursor: pointer;
+}
+
+.left_information li {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+select {
+    width: 200px;
+    padding: 10px;
+    margin-left: 5px;
+}
+.left_information input {
+    width: 200px;
+}
+.right_information {
+    margin-left: 20px;
+}
+input {
+    margin: 0;
+}
+@media (max-width:700px) {
+
+    .information_List {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .sign-Up_Table img {
+        display: none;
+    }
+    .right_information {
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+}
