@@ -5,6 +5,7 @@ body {
 .nav-bar {
     background-color: rgb(37 37 37 / 0%);
 }
+
 .img-main img{
     width: 100%;
 }
@@ -21,11 +22,11 @@ body {
     font-size: 18px;
 }
 .header-Thong-so {
-    position: absolute;
-    top: 90%;
+    position:absolute;
+    top: 85%;
     display: flex;
     justify-content: space-between;
-    margin-left: 10%;
+    left: 20%;
     align-items: center;
 }
 .header-Thong-so h5 {
@@ -37,6 +38,7 @@ body {
 .thong-so {
     padding: 0 20px;
     border-right: 1px solid gray;
+    text-align: center;
 }
 .mua-ngay {
     border: 1px solid rgb(3, 3, 3);
@@ -83,7 +85,20 @@ body {
 
 .roper-2 {
     display: none;
+}@media (max-width:1329px) {
+    .thong-so-a {
+        display: none;
+    }
+    .mota-duoi_anh {
+        display: none;
+    }
 }
+@media (max-width:1330px) {
+    .thong-so-a {
+        top: 70%;
+    }
+}
+
 @media (max-width:1280px) {
     .hinh-anh {
         display:grid;
@@ -111,9 +126,7 @@ body {
         max-width: 50%;
         line-height: 1.5;
     }
-    .thong-so-a {
-        display: none;
-    }
+
     .ten-xe {
         display: none;
     }
@@ -282,4 +295,10 @@ label {
     text-shadow: 0 1px 0 #fff;
     opacity: .5;
     border: none;
+}
+.ten-xe-a {
+    width: 86%;
+    margin: auto;
+    color: #fff;
+    margin-top: 20px;
 }
