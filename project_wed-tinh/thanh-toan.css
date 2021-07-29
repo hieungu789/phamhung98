@@ -8,7 +8,8 @@
     color: black;
 }
 main{
-   max-width: 100%;
+   max-width: 96%;
+   margin-bottom: 20px;
 }
 .menu-right {
     background-color: #fff;
@@ -16,12 +17,325 @@ main{
 .menu-right li a{
     color: black;
 }
+body {
+    background: #E5E5E5;
+}
+
 .box-payment {
     margin-top: 65px;
     display: flex;
-    justify-content: space-evenly;
+    
+}
+.xaz {
+    border-radius: 3px;
+}
+.tinhThanh {
+    display: flex;
+    padding: 0 5px;
+}
+.tinhThanh span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 7px;
+}
+.diaDiem {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.diaDiem h4 {
+    margin-bottom: 20px;
 }
 .box_One {
     display: flex;
     justify-content: space-between;
+}
+.time_GiveCar {
+    margin-top: 20px;
+}
+label {
+    margin-right: 10px;
+    font-size: 18px;
+}
+.phuongThuc,.thongTinKH, .thanhToan {
+    padding: 10px 20px; 
+    margin-top: 12px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.phuongThuc h4 {
+    margin-bottom:0;
+}
+.phuongThuc label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.vat {
+    margin-right: 25px;
+}
+.KH-aed span{
+    font-size: 18px;
+}
+.vact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.KH-input {
+    padding-top: 18px;
+}
+.KH-input_A {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+}
+.trea {
+    display: flex;
+    justify-content: space-between;
+  
+}
+.trea input{
+    width: 225px;
+}
+.trea label{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.trea:last-child {
+    margin-top: 15px;
+}
+.checkbox-a {
+    display: flex;
+    margin-bottom: 5px;
+}
+.checkbox-a input {
+    margin: 5px 10px 0 0;
+}
+
+.checkbox-a p {
+    font-size: 18px;
+}
+.poas {
+    display: flex;
+    margin-top: 15px;
+}
+.poas-as {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.poas-as label {
+    font-weight: bold;
+    font-size: 15   px;
+    line-height: 19px;
+}
+.poas-as input {
+    margin-right: 15px;
+}
+.box-xacNhan {
+    background-color: #fff;
+    margin-left: 10px;
+}
+.box-xacNhan_thanToan {
+    position: sticky;
+    top: 40px;
+    margin-bottom:50px ;
+}
+.box-xacNhan_thanToan {
+    text-align: center;
+    
+
+}
+.box-xacNhan_thanToan-header {
+    display: flex;
+    flex-direction: column;
+}
+.box-xacNhan_thanToan-header span {
+    font-size: 24px;
+    
+}
+.phienBan {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid gray;
+    padding: 15px 0;
+    width: 80%;
+    margin: auto;
+}
+.phienBan_a h6{
+    font-size: 24px;
+}
+.phienBan_a span {
+    font-size: 22px;
+}
+.mau-A {
+    border:1px solid gray;
+    width: 100px;
+    height: 32px;
+    border-radius: 8px;
+    border: 0.75px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-color: #785962;
+}
+.mau-B {
+    cursor: pointer;
+}
+.price-Udai {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+}
+.price-Udai h6, .don-Hang h6 {
+    font-size: 24px;
+}
+.price-Udai span, .don-Hang span {
+    font-size: 22px;
+}
+.box-xacNhan_thanToan-body {
+    border-bottom: 1px solid gray;
+    margin: auto;
+    width: 80%;
+    padding-bottom: 20px;
+}
+.gia-Tri {
+    padding-top: 25px;
+    margin: auto;
+    width: 80%;
+}
+.don-Hang {
+    display: flex;
+    justify-content: space-between;
+}
+.button-XacNhan {
+    padding: 10px;
+    background-color: #2C72C6;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@media (max-width:1300px) {
+    .box-payment {
+        flex-direction: column;
+    }
+    .box-xacNhan {
+        margin-top: 20px;
+    }
+}
+@media (max-width:768px) {
+    .vact {
+        flex-direction: column;
+    }
+    .KH-input_A {
+        width: 100%;
+    }
+    .KH-input_A:last-child {
+        margin-top: 15px;
+    }
+    .trea input {
+        width: 70%;
+    }
+    .box_One {
+        flex-direction: column;
+    }
+
+    .poas {
+        flex-direction: column;
+    }
+
+    .vat {
+        display: flex;
+        align-items: center;
+    }
+    .phienBan {
+        flex-direction: column;
+    }
+    .phienBan_a {
+        display: flex;
+        justify-content: space-between;
+    }
+    .phuongThuc label, .trea label {
+        font-size: 12px;
+    }
+    .tinhThanh {
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .tinhThanh span {
+        margin-bottom: 10px;
+    }
+    .xaz {
+        width: 100%;   
+    }
+    .modal-content {
+        min-width: 300px;
+    }
+}
+@media (max-width:320px) {
+    .trea label {
+        font-size: 10px;
+        align-items: center;
+    }
+    .phuongThuc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .price-Udai h6, .don-Hang h6 {
+        font-size: 18px;
+    }
+    .price-Udai span, .don-Hang span {
+        font-size: 18px;
+    }
+  
+}
+.thong-bao-Done {
+    display: none; /* mặc định được ẩn đi */
+    position: fixed; /* vị trí cố định */
+    z-index: 1; /* Ưu tiên hiển thị trên cùng */
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    
+}
+.close {
+    color: #cc2f2f;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    color:rgb(0, 0, 0);
+}
+.home_as {
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid gray;
+    background-color: gray;
+    cursor: pointer;
+
+}
+.home_as:hover {
+    background-color: rgb(184, 184, 184);
+}
+.home_as a{
+    color: honeydew;
 }

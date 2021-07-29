@@ -10,6 +10,8 @@
         type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="hover.css">
     <link rel="stylesheet" href="responsive.css">
@@ -99,29 +101,29 @@
                 <div class="give-car">
 
                     <div class="diaDiem">
-                        <h4>Địa điểm giao xe</h4>
+                        <h4>ĐỊA ĐIỂM GIAO XE</h4>
                         <div class="box_One">
                             <div class="tinhThanh">
                                 <span>Tỉnh thành</span>
-                                <select name="" id="">
+                                <select class="xaz" name="" id="">
                                     <option value=""></option>
                                     <option value="">Hà Nội</option>
                                     <option value="">Hải Dương</option>
                                     <option value="">Tp Hồ Chí Minh</option>
                                 </select>
                             </div>
-                            <div class="quanHuyen">
+                            <div class="tinhThanh">
                                 <span>Quận/Huyện</span>
-                                <select name="" id="">
+                                <select class="xaz" name="" id="">
                                     <option value=""></option>
                                     <option value="">Thanh Xuân</option>
                                     <option value="">Cẩm Phả</option>
                                     <option value="">Quận 4</option>
                                 </select>
                             </div>
-                            <div class="showRoom">
-                                <span>ShowRoom</span>
-                                <select name="" id="">
+                            <div class="tinhThanh">
+                                <span>Showroom</span>
+                                <select class="xaz" name="" id="">
                                     <option value=""></option>
                                     <option value="">HAXACO Kim Giang</option>
                                     <option value="">HAXACO Thanh Xuân</option>
@@ -130,104 +132,179 @@
                             </div>
                         </div>
                         <div class="time_GiveCar">
-                        <label for="">Thời gian ngày dự kiến giao xe</label>
-                        <input type="date">
-                        </div>                        
+                            <label for="">Thời gian ngày dự kiến giao xe</label>
+                            <input type="date">
+                        </div>
                     </div>
 
-                    <div class="phuongThuc"></div>
-                    <div class="thongTinKH"></div>
-                    <div class="thanhToan"></div>
-                    
+                    <div class="phuongThuc">
+                        <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+                        <div style="display:flex;">
+                            <div class="vat">
+                                <input type="radio" id="traThang" name="fav_language" value="traThang">
+                                <label for="traThang">Trả thẳng</label><br>
+                            </div>
+                            <div class="vat">
+                                <input type="radio" id="traGop" name="fav_language" value="traGop">
+                                <label for="traGop">Trả góp</label><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thongTinKH">
+                        <div class="KH-aed">
+                            <h4>THÔNG TIN KHÁCH HÀNG</h4>
+                            <span>Thông tin khách hàng sẽ được đưa vào thỏa thuận hợp đồng. Quý khách vui lòng nhập
+                                chính xác các nội dung dưới đây.</span>
+                            <div class="KH-input">
+                                <div class="vact">
+                                    <div class="KH-input_A">
+                                        <div class="trea">
+                                            <label for="">HỌ VÀ TÊN</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="trea">
+                                            <label for="">CMNN/CCCD</label>
+                                            <input type="text">
+                                        </div>
+
+
+                                    </div>
+                                    <div class="KH-input_A">
+                                        <div class="trea">
+                                            <label for="">Số điện thoại</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="trea">
+                                            <label for="">Email</label>
+                                            <input type="text">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="checkbox-a">
+                                    <input type="checkbox">
+                                    <p>
+                                        Tôi cam kết các thông tin khách hàng cung cấp tại đây hoàn toàn chính xác
+                                    </p>
+
+                                </div>
+
+                                <div class="checkbox-a">
+                                    <input type="checkbox">
+                                    <p>
+                                        Tôi đã đọc, hiểu rõ và xác nhận đồng ý với toàn bộ nội dung <strong
+                                            style="color: #2C76C6;">Điều khoản</strong> trong
+                                        Thỏa
+                                        Thuận Đặt Cọc trên cũng như Chính Sách Ưu Đãi áp dụng tại thời điểm đặt mua xe ô
+                                        tô
+                                        này trên VinFast Online.
+                                    </p>
+
+                                </div>
+                                <div class="checkbox-a">
+                                    <input type="checkbox">
+                                    <p>Tôi đồng ý với các <strong style="color: #2C76C6;"> Điều kiện & Điều
+                                            khoản</strong> của Rosius Car</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thanhToan">
+                        <div class="KH-aed">
+                            <h4>THANH TOÁN</h4>
+                            <span> Để hoàn thành đơn đặt hàng. Quý khách vui lòng thanh toán 50.000.000đ cho VinFast
+                                bằng cách
+                                lựa chọn một trong các phương thức thanh toán sau:
+                            </span>
+                            <div class="poas">
+                                <div class="poas-as">
+                                    <input type="radio" id="traGop" name="fav_language" value="traGop">
+                                    <label for="traGop">Thanh toán bằng thẻ quốc tế Visa, Master, JCB</label><br>
+                                </div>
+                                <div class="poas-as">
+                                    <input type="radio" id="traGop" name="fav_language" value="traGop">
+                                    <label for="traGop">Thẻ ATM nội địa / Internet Banking ( Miễn phí thanh toán
+                                        )</label><br>
+                                </div>
+                                <div class="poas-as">
+                                    <input type="radio" id="traGop" name="fav_language" value="traGop">
+                                    <label for="traGop">Chuyển khoản ngân hàng</label><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-xacNhan">
+                <div class="box-xacNhan_thanToan">
+                    <div class="box-xacNhan_thanToan-header">
+                        <img src="img/conga.png" alt="">
+                        <span>S450</span>
+                        <div class="phienBan">
+                            <div class="phienBan_a">
+                                <h6>Phiên bản</h6>
+                                <span>Limited</span>
+                            </div>
+                            <div class="phienBan_a">
+                                <h6>Màu sắc</h6>
+                                <div class="mau-A"></div>
+                            </div>
+                            <div class="phienBan_a">
+                                <h6>Nội Thất</h6>
+                                <div class="mau-B">
+                                    <img src="img/Frame 353.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="box-xacNhan_thanToan-body">
+                        <div class="price-Udai">
+                            <h6>Giá niêm yết</h6>
+                            <span>4.229.000.000</span>
+                        </div>
+                        <div class="price-Udai">
+                            <h6>Ưu đãi</h6>
+                            <span>-145.000.000</span>
+                        </div>
+                    </div>
+                    <div class="gia-Tri">
+                        <div class="don-Hang">
+                            <h6>Giá trị đơn hàng</h6>
+                            <span>4.084.000.000đ </span>
+                        </div>
+                        <div id="myBtn" class="button-XacNhan">
+                            Xác nhận đơn
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="Modal" class="thong-bao-Done">
+            <div class="modal-content">
+                <div>
+                    Bạn Đã Thanh Toán Thành Công
+                    <span class="close">&times;</span>
+                </div>
+                <div class="home_as">
+                    <a href="index.html"> Quay Về Chủ    </a>
                 </div>
 
-            </div>
-            <div>
-                âsasas
             </div>
         </div>
     </main>
-    <!-- <footer>
-        <div class="footer">
-            <div class="footer-menu">
 
-                <div class="footer-menu_link">
-                    <h5>Về Mercedes-Benz</h5>
-                    <div class="footer-menu_link-item">
-                        <ul>
-                            <li>
-                                <a class="first after" href="#">Liên hệ</a>
-                            </li>
-                            <li>
-                                <a class="first after" href="#">Tin tức và Sự kiện</a>
-                            </li>
-                            <li>
-                                <a class="first after" href="#">Cơ hội và việc làm</a>
-                            </li>
-                            <li><a class="first after" href="#">25 năm tại Việt Nam</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-menu_link">
-                    <h5>Khách hàng mua xe</h5>
-                    <div class="footer-menu_link-item">
-                        <ul>
-                            <li>
-                                <a class="first after" href="#">Tìm kiếm đại lý</a>
-                            </li>
-                            <li>
-                                <a class="first after" href="#">Đăng ký lái thử</a>
-                            </li>
-                            <li>
-                                <a class="first after" href="#">Ưu đãi & khuyến mãi</a>
-                            </li>
-                            <li><a class="first after" href="#">Yêu cầu tư vấn</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-menu_link">
-                    <h5>Mạng xã hội</h5>
-                    <div class="footer-menu_link-item">
-                        <ul>
-                            <li>
-                                <a class="first after" href="#">Facebook</a>
-                            </li>
-                            <li>
-                                <a class="first after" href="#">Instagram</a>
-                            </li>
-                            <li>
-                                <a class="first after" href="#">YouTube</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14901.672027272343!2d105.8172884472016!3d20.97587477447616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acf1a3d19795%3A0xd886e066da66f61!2sMercedes-Benz%20Haxaco%20Kim%20Giang!5e0!3m2!1svi!2s!4v1627494129733!5m2!1svi!2s"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div style="border-top:1px solid gray;width:86%;margin:auto;"></div>
-            <div class="list-bottom">
-                <div class="list-bottom_left">
-                    <a class="first after" href="#">Bản quyền nội dung</a>
-                    <a class="first after" href="#">Cài đặt</a>
-                    <a class="first after" href="#">Quyền riêng tư và bảo vệ dữ liệu</a>
-                    <a class="first after" href="#">Thông tin pháp lý</a>
-                </div>
-                <div class="list-bottom_right">
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-instagram-square"></i>
-                </div>
-            </div>
-        </div>
-    </footer> -->
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <script src="main.js"></script>
 </body>
