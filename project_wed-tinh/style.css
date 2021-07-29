@@ -610,3 +610,24 @@ main h2 {
     border-radius: 2px;
     color: gray;
 }
+.box-text.thaoAnh{
+    opacity: 1;
+    background-color: rgb(83, 85, 87);
+    color: rgb(255, 255, 255);
+}
+
+.ThangTuan.thaoAnh{
+    display: block;
+}
+
+.ThangTuan {
+    display: none;
+}
+.hungDiec {
+    font-size: 24px;
+    text-align: center;
+    color: #C82333;
+}
+.grid-Thang {
+    grid-template-columns: repeat(1,1fr);
+}

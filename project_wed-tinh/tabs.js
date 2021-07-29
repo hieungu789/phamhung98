@@ -6,10 +6,8 @@ const tabs = $$('.item')
 const content_item = $$('.tab-content-item')
 const tabActive = $('.item.active')
 const line = $('.nav-item .line')
-
-line.style.left = tabActive.offsetLeft + 'px';
-line.style.width = tabActive.offsetWidth + 'px';
-
+ line.style.left = tabActive.offsetLeft + 'px';
+ line.style.width = tabActive.offsetWidth + 'px';
 tabs.forEach((tab, index) => {
     const content = content_item[index]
     tab.onclick = function () {
@@ -23,3 +21,8 @@ tabs.forEach((tab, index) => {
 })
 
 
+
+
+
+
+ 
