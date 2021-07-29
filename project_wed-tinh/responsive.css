@@ -76,11 +76,15 @@
     .menu-drift_away {
         width: 40%;
     }
+    iframe {
+        display: none
+    }
 }
 @media (max-width:600px){
     .menu-drift_away {
         width: 60%;
     }
+
 }
 @media (max-width:568px) {
     .featured {
