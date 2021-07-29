@@ -89,9 +89,7 @@ body {
     .thong-so-a {
         display: none;
     }
-    .mota-duoi_anh {
-        display: none;
-    }
+
 }
 @media (max-width:1330px) {
     .thong-so-a {
