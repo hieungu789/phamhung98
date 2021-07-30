@@ -20,7 +20,9 @@ main{
 body {
     background: #E5E5E5;
 }
-
+.nav-bar.scroll .menu-right li a{
+    color: #121212;
+}
 .box-payment {
     margin-top: 65px;
     display: flex;
