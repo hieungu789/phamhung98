@@ -12,16 +12,21 @@ main{
    margin-bottom: 20px;
 }
 .menu-right {
-    background-color: #fff;
+    background-color: rgb(0, 0, 0);
 }
 .menu-right li a{
-    color: black;
+    color: rgb(255, 255, 255);
+}
+.user {
+    font-size: 20px;
+    padding-right: 15px;
+    border-right: 1px solid rgb(0, 0, 0);
 }
 body {
     background: #E5E5E5;
 }
 .nav-bar.scroll .menu-right li a{
-    color: #121212;
+    color: #ffffff;
 }
 .box-payment {
     margin-top: 65px;
@@ -326,6 +331,8 @@ label {
     border: 1px solid #888;
     width: 30%;
     color:rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
 }
 .home_as {
     text-align: center;

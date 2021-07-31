@@ -443,8 +443,11 @@ main h2 {
     padding: 10px;
 }
 .main-mid {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+
+    display: flex;
+}
+.redmi {
+    margin-left: 30px;
 }
 .sedan {
     border-bottom: 1px solid gray;
@@ -482,6 +485,7 @@ main h2 {
 }
 .main-menu_left {
     display: flex;
+    flex: 1;
 }
 .main-menu_left p {
     margin-left: 10px;
@@ -494,7 +498,8 @@ main h2 {
 }
 .menu-left {
     border-right: 2px solid rgb(190, 190, 190);
-    height: calc(100% - 50px);
+    height: calc(280vh);
+    padding-right: 30px;
 }
 .menu-left p{
     color: #ACACAC;
@@ -505,6 +510,8 @@ main h2 {
     color: #000;
     text-align: center;
     font-family: 'Playfair Display', serif;
+
+
 }
 .card-main h4 {
     font-family: 'Playfair Display', serif;
