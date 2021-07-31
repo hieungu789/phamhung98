@@ -5,9 +5,15 @@ body {
 .nav-bar {
     background-color: rgb(37 37 37 / 0%);
 }
-
+.img {
+    width: 100%;   
+}
+.img-main {
+    position: relative;
+}
 .img-main img{
     width: 100%;
+    
 }
 .ten-xe {
     position:absolute;
@@ -51,7 +57,10 @@ body {
     margin-right: 15px;
     margin: 0 20px;
     
+}.menu-right {
+    background-color: #121212;
 }
+
 .mua-ngay a {
     color:#121212;
 }
@@ -75,7 +84,6 @@ body {
     grid-gap:20px;
     margin: 40px 0 40px 0;
 }
-
 .hinh-anh {
     display:grid ;
     grid-template-columns: repeat(2,1fr);
@@ -129,7 +137,9 @@ body {
         display: none;
     }
 }
-
+.furniture img {
+    width: 100%;
+}
 .thong-so-a{
     width: 80%;
      margin: auto;

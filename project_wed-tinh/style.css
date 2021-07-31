@@ -443,12 +443,10 @@ main h2 {
     padding: 10px;
 }
 .main-mid {
-
+    padding-bottom: 10px;
     display: flex;
 }
-.redmi {
-    margin-left: 30px;
-}
+
 .sedan {
     border-bottom: 1px solid gray;
     width: calc(100% - 50px);
@@ -498,7 +496,6 @@ main h2 {
 }
 .menu-left {
     border-right: 2px solid rgb(190, 190, 190);
-    height: calc(280vh);
     padding-right: 30px;
 }
 .menu-left p{
